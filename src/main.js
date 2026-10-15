@@ -60,23 +60,30 @@ function initMobileNav() {
   const menuBtn = document.getElementById('mobile-menu-btn');
   const closeBtn = document.getElementById('mobile-close-btn');
   const drawer = document.getElementById('mobile-nav');
+  const backdrop = document.getElementById('mobile-nav-backdrop');
   const mobileLinks = document.querySelectorAll('.mobile-link');
 
   if (!menuBtn || !drawer) return;
 
   const openDrawer = () => {
     drawer.classList.add('open');
+    if (backdrop) backdrop.classList.add('open');
     menuBtn.classList.add('active');
     menuBtn.setAttribute('aria-expanded', 'true');
     drawer.setAttribute('aria-hidden', 'false');
+    if (backdrop) backdrop.setAttribute('aria-hidden', 'false');
+    document.documentElement.style.overflow = 'hidden';
     document.body.style.overflow = 'hidden';
   };
 
   const closeDrawer = () => {
     drawer.classList.remove('open');
+    if (backdrop) backdrop.classList.remove('open');
     menuBtn.classList.remove('active');
     menuBtn.setAttribute('aria-expanded', 'false');
     drawer.setAttribute('aria-hidden', 'true');
+    if (backdrop) backdrop.setAttribute('aria-hidden', 'true');
+    document.documentElement.style.overflow = '';
     document.body.style.overflow = '';
   };
 
@@ -89,12 +96,13 @@ function initMobileNav() {
   });
 
   if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+  if (backdrop) backdrop.addEventListener('click', closeDrawer);
 
   mobileLinks.forEach(link => {
     link.addEventListener('click', closeDrawer);
   });
 
-  // Close on backdrop tap or Escape key
+  // Close on Escape key
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && drawer.classList.contains('open')) {
       closeDrawer();
