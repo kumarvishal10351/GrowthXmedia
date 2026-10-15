@@ -202,37 +202,39 @@ img, video {
 .brand-logo {
   display: inline-flex;
   align-items: center;
-  gap: 0.65rem;
   text-decoration: none;
+  line-height: 1;
 }
 
-.brand-mark {
-  width: 12px;
-  height: 12px;
-  background-color: var(--accent-lime);
-  border-radius: 2px;
-  transform: rotate(45deg);
-  box-shadow: 0 0 12px var(--accent-lime);
-  transition: transform var(--transition-fast);
+.brand-logo picture {
+  display: inline-flex;
+  align-items: center;
 }
 
-.brand-logo:hover .brand-mark {
-  transform: rotate(135deg) scale(1.15);
+.brand-logo-img {
+  height: 40px;
+  width: auto;
+  max-width: 220px;
+  object-fit: contain;
+  display: block;
+  transition: transform var(--transition-fast), filter var(--transition-fast);
 }
 
-.brand-text {
-  font-family: var(--font-display);
-  font-size: 1.25rem;
-  font-weight: 800;
-  letter-spacing: -0.04em;
-  color: var(--text-main);
-  white-space: nowrap;
-}
-
-@media (min-width: 480px) {
-  .brand-text {
-    font-size: 1.45rem;
+@media (min-width: 768px) {
+  .brand-logo-img {
+    height: 50px;
+    max-width: 270px;
   }
+}
+
+.brand-logo:hover .brand-logo-img {
+  transform: scale(1.03);
+  filter: drop-shadow(0 0 10px var(--accent-lime-glow));
+}
+
+.footer-logo .brand-logo-img {
+  height: 56px;
+  max-width: 300px;
 }
 
 .brand-tag {
