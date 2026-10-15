@@ -560,8 +560,12 @@ img, video {
   align-items: center;
   justify-content: center;
   gap: 0.65rem;
+  padding: 0.85rem 1.65rem;
   font-family: var(--font-body);
+  font-size: 0.95rem;
   font-weight: 600;
+  line-height: 1.4;
+  min-height: 48px;
   text-decoration: none;
   border-radius: var(--radius-sm);
   transition: all var(--transition-fast);
@@ -575,15 +579,37 @@ img, video {
 .btn-sm {
   padding: 0.55rem 1.1rem;
   font-size: 0.85rem;
+  min-height: 38px;
 }
 
 .btn-lg {
   padding: 0.95rem 1.85rem;
   font-size: 1rem;
+  min-height: 52px;
 }
 
 .btn-block {
   width: 100%;
+  min-height: 54px;
+  padding: 1rem 1.75rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+#submit-btn {
+  width: 100%;
+  min-height: 56px;
+  padding: 1.1rem 2rem;
+  font-size: 1.02rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-top: 0.5rem;
+  box-shadow: 0 4px 20px var(--accent-lime-glow);
+}
+
+#submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px var(--accent-lime-glow);
 }
 
 .btn-primary {
@@ -1828,6 +1854,46 @@ img, video {
   border-radius: var(--radius-sm);
   display: inline-block;
   width: fit-content;
+}
+
+.method-telegram-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--accent-lime);
+  background: var(--accent-lime-dim);
+  border: 1px solid var(--accent-lime-border);
+  padding: 0.55rem 0.95rem;
+  border-radius: var(--radius-sm);
+  width: fit-content;
+  text-decoration: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  transition: all var(--transition-fast);
+}
+
+.method-telegram-btn:hover {
+  background: rgba(212, 255, 50, 0.22);
+  border-color: var(--accent-lime);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 18px var(--accent-lime-glow);
+}
+
+.method-telegram-btn .telegram-icon {
+  color: var(--accent-lime);
+  flex-shrink: 0;
+}
+
+.method-telegram-btn .telegram-arrow {
+  transition: transform var(--transition-fast);
+}
+
+.method-telegram-btn:hover .telegram-arrow {
+  transform: translate(2px, -2px);
 }
 
 /* Form Column */

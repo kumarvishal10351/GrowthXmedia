@@ -22,6 +22,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
     
+    <!-- Preload Hero Poster to prevent background flash -->
+    <link rel="preload" as="image" href="/videos/hero-poster.webp" type="image/webp" />
+
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
@@ -104,7 +107,7 @@
             loop 
             playsinline 
             preload="auto"
-            poster="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2000&auto=format&fit=crop"
+            poster="/videos/hero-poster.webp"
           >
             <source src="/videos/hero-bg.mp4" type="video/mp4" />
           </video>
@@ -665,8 +668,17 @@
                   <span class="method-val">London &bull; Mumbai &bull; Remote Worldwide</span>
                 </div>
                 <div class="contact-method">
-                  <span class="method-label">Client Capacity</span>
-                  <span class="method-badge">2 Available Engagements for Q4</span>
+                  <span class="method-label">Direct Telegram</span>
+                  <a href="https://t.me/growthxmedia_bot" target="_blank" rel="noopener noreferrer" class="method-telegram-btn" aria-label="Direct Telegram Concierge">
+                    <svg class="telegram-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="22" y1="2" x2="11" y2="13"/>
+                      <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                    </svg>
+                    <span>@growthxmedia_bot</span>
+                    <svg class="telegram-arrow" width="12" height="12" viewBox="0 0 14 14" fill="none">
+                      <path d="M1.75 12.25L12.25 1.75M12.25 1.75H4.2M12.25 1.75V9.8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
@@ -732,7 +744,7 @@
                   <span class="error-msg" id="message-error">Please provide a brief description of your project.</span>
                 </div>
 
-                <button type="submit" id="submit-btn" class="btn btn-primary btn-block">
+                <button type="submit" id="submit-btn" class="btn btn-primary btn-block btn-lg">
                   <span class="btn-text">Submit Strategy Inquiry</span>
                   <span class="btn-spinner" aria-hidden="true"></span>
                   <svg class="icon-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none">
