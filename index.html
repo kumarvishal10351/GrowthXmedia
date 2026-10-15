@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GrowthXmedia — Digital Growth &amp; Performance Architecture</title>
+    <meta name="description" content="GrowthXmedia is a premier digital growth studio engineering performance marketing, bespoke web experiences, high-fidelity content, and WhatsApp &amp; Telegram automation." />
+    <meta name="keywords" content="GrowthXmedia, digital marketing agency, performance ads, web development, content creation, WhatsApp automation, Telegram automation, growth studio" />
+    <meta name="theme-color" content="#070c09" />
+    
+    <!-- Open Graph / Social Meta -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="GrowthXmedia — Digital Growth &amp; Performance Architecture" />
+    <meta property="og:description" content="Turning raw digital attention into predictable, compounding revenue through creative strategy and omnichannel automation." />
+    <meta property="og:site_name" content="GrowthXmedia" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="GrowthXmedia — Digital Growth Studio" />
+    <meta name="twitter:description" content="High-Performance Marketing, Bespoke Web &amp; Conversational Automation." />
+
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <!-- Top Progress Bar -->
+    <div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>
+
+    <!-- Site Header / Navigation -->
+    <header class="site-header" id="header">
+      <div class="header-inner container">
+        <a href="#hero" class="brand-logo" aria-label="GrowthXmedia Home">
+          <span class="brand-mark"></span>
+          <span class="brand-text">GrowthXmedia</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav" aria-label="Main Navigation">
+          <ul class="nav-list">
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#about" class="nav-link">Philosophy</a></li>
+            <li><a href="#process" class="nav-link">Process</a></li>
+            <li><a href="#faq" class="nav-link">FAQ</a></li>
+          </ul>
+        </nav>
+
+        <!-- Right Header Actions -->
+        <div class="header-actions">
+          <a href="#contact" class="btn btn-primary btn-sm header-cta">
+            <span>Let's Talk</span>
+            <svg class="icon-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M1.75 12.25L12.25 1.75M12.25 1.75H4.2M12.25 1.75V9.8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+
+          <!-- Mobile Menu Trigger -->
+          <button id="mobile-menu-btn" class="mobile-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Toggle navigation menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobile-nav" class="mobile-drawer" aria-hidden="true">
+      <div class="mobile-drawer-inner">
+        <div class="mobile-drawer-header">
+          <span class="mobile-brand">GrowthXmedia / NAVIGATION</span>
+          <button id="mobile-close-btn" class="drawer-close-btn" aria-label="Close menu">&times;</button>
+        </div>
+        <nav class="mobile-links" aria-label="Mobile Navigation Links">
+          <a href="#services" class="mobile-link"><span>01</span> Services</a>
+          <a href="#about" class="mobile-link"><span>02</span> Philosophy</a>
+          <a href="#process" class="mobile-link"><span>03</span> Our Process</a>
+          <a href="#faq" class="mobile-link"><span>04</span> FAQ</a>
+          <a href="#contact" class="mobile-link"><span>05</span> Start a Project</a>
+        </nav>
+        <div class="mobile-drawer-footer">
+          <p class="mobile-contact-title">Direct Studio Line</p>
+          <a href="mailto:hello@growthxmedia.com" class="mobile-email">hello@growthxmedia.com</a>
+          <div class="mobile-socials">
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://x.com" target="_blank" rel="noreferrer">X (Twitter)</a>
+            <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main id="main-content">
+      <!-- HERO SECTION -->
+      <section id="hero" class="hero-section">
+        <!-- Video Background with Poster Fallback -->
+        <div class="hero-media-wrapper" aria-hidden="true">
+          <video 
+            id="hero-video"
+            class="hero-video" 
+            autoplay 
+            muted 
+            loop 
+            playsinline 
+            preload="auto"
+            poster="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2000&auto=format&fit=crop"
+          >
+            <source src="/videos/hero-bg.mp4" type="video/mp4" />
+          </video>
+          <div class="hero-overlay"></div>
+        </div>
+
+        <div class="container hero-container">
+          <div class="hero-content">
+            <h1 class="hero-title reveal">
+              We turn raw digital attention into <span class="highlight-lime">compounding revenue.</span>
+            </h1>
+
+            <p class="hero-subtitle reveal">
+              GrowthXmedia unifies high-concept creative, performance media, modern web architecture, and automated conversational funnels into one cohesive growth engine.
+            </p>
+
+            <div class="hero-actions reveal">
+              <a href="#contact" class="btn btn-primary btn-lg">
+                <span>Book Strategy Consultation</span>
+                <svg class="icon-arrow" width="16" height="16" viewBox="0 0 14 14" fill="none">
+                  <path d="M1.75 12.25L12.25 1.75M12.25 1.75H4.2M12.25 1.75V9.8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a href="#services" class="btn btn-secondary btn-lg">
+                <span class="btn-play-icon"></span>
+                <span>Explore Disciplines</span>
+              </a>
+            </div>
+
+            <!-- Trust / Philosophy Pillars -->
+            <div class="hero-stats-grid reveal">
+              <div class="stat-item">
+                <span class="stat-number">7</span>
+                <span class="stat-label">Integrated Disciplines</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Bespoke Full-Funnel Architecture</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">&lt; 1s</span>
+                <span class="stat-label">Ultra-Fast Conversion Web Vitals</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">24/7</span>
+                <span class="stat-label">WhatsApp &amp; Telegram Automation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <a href="#services" class="hero-scroll-indicator" aria-label="Scroll down to services">
+          <span class="mouse-scroll">
+            <span class="mouse-wheel"></span>
+          </span>
+          <span class="scroll-label">EXPLORE DISCIPLINES</span>
+        </a>
+      </section>
+
+      <!-- TICKER / MARQUEE -->
+      <div class="marquee-strip" aria-hidden="true">
+        <div class="marquee-track">
+          <span class="marquee-item">PERFORMANCE MARKETING <span class="marquee-dot">✦</span></span>
+          <span class="marquee-item">CONVERSATIONAL AI &amp; AUTOMATION <span class="marquee-dot">✦</span></span>
+          <span class="marquee-item">HIGH-VELOCITY CREATIVE <span class="marquee-dot">✦</span></span>
+          <span class="marquee-item">HEADLESS WEB EXPERIENCES <span class="marquee-dot">✦</span></span>
+          <span class="marquee-item">WHATSAPP COMMERCE FUNNELS <span class="marquee-dot">✦</span></span>
+          <span class="marquee-item">TELEGRAM ECOSYSTEMS <span class="marquee-dot">✦</span></span>
+          <span class="marquee-item">PERFORMANCE MARKETING <span class="marquee-dot">✦</span></span>
+          <span class="marquee-item">CONVERSATIONAL AI &amp; AUTOMATION <span class="marquee-dot">✦</span></span>
+          <span class="marquee-item">HIGH-VELOCITY CREATIVE <span class="marquee-dot">✦</span></span>
+          <span class="marquee-item">HEADLESS WEB EXPERIENCES <span class="marquee-dot">✦</span></span>
+          <span class="marquee-item">WHATSAPP COMMERCE FUNNELS <span class="marquee-dot">✦</span></span>
+          <span class="marquee-item">TELEGRAM ECOSYSTEMS <span class="marquee-dot">✦</span></span>
+        </div>
+      </div>
+
+      <!-- SERVICES SECTION -->
+      <section id="services" class="section services-section">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="section-tag">OUR DISCIPLINES</div>
+            <h2 class="section-title">Seven specialized services.<br/><span class="text-gradient">One unified growth flywheel.</span></h2>
+            <p class="section-description">
+              Traditional agencies isolate media buying from creative and tech. At GrowthXmedia, all seven core capabilities operate as an interconnected revenue infrastructure.
+            </p>
+          </div>
+
+          <!-- 7 Visually Distinct Service Cards -->
+          <div class="services-grid">
+            <!-- 01: Social Media Management -->
+            <article class="service-card service-card--featured reveal" data-service="social-media">
+              <div class="service-number">01</div>
+              <div class="service-header">
+                <div class="service-icon-wrap">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                  </svg>
+                </div>
+                <span class="service-badge">Organic Authority</span>
+              </div>
+              <h3 class="service-title">Social Media Management</h3>
+              <p class="service-copy">
+                Architecting cultural relevance and algorithmic momentum. We build narrative content calendars, high-retention short-form video strategies, and executive brand positioning that transforms passive followers into loyal brand advocates.
+              </p>
+              <ul class="service-specs">
+                <li>Editorial Calendar &amp; Content Programming</li>
+                <li>Community Management &amp; Brand Sentiment</li>
+                <li>Algorithmic Short-Form Architecture (Reels/Shorts/TikTok)</li>
+                <li>Executive Thought Leadership Positioning</li>
+              </ul>
+              <div class="service-footer">
+                <button class="service-cta-btn" data-target-service="Social Media Management">
+                  <span>Explore Scope</span>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1.75 12.25L12.25 1.75M12.25 1.75H4.2M12.25 1.75V9.8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+                </button>
+              </div>
+            </article>
+
+            <!-- 02: Performance Ads -->
+            <article class="service-card reveal" data-service="performance-ads">
+              <div class="service-number">02</div>
+              <div class="service-header">
+                <div class="service-icon-wrap">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                  </svg>
+                </div>
+                <span class="service-badge">Paid Acquisition</span>
+              </div>
+              <h3 class="service-title">Performance Ads</h3>
+              <p class="service-copy">
+                Data-driven customer acquisition across Meta, Google Search/Shopping, YouTube, TikTok, and programmatic networks. Rigorous creative iteration paired with predictive bidding algorithms to maximize Return On Ad Spend.
+              </p>
+              <ul class="service-specs">
+                <li>Omnichannel Media Buying &amp; Bidding Strategies</li>
+                <li>Dynamic Creative Testing (DCT) Matrices</li>
+                <li>Server-Side Tracking (CAPI) &amp; Attribution Modeling</li>
+                <li>Full-Funnel Retargeting &amp; Churn Prevention</li>
+              </ul>
+              <div class="service-footer">
+                <button class="service-cta-btn" data-target-service="Performance Ads">
+                  <span>Explore Scope</span>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1.75 12.25L12.25 1.75M12.25 1.75H4.2M12.25 1.75V9.8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+                </button>
+              </div>
+            </article>
+
+            <!-- 03: Website Development -->
+            <article class="service-card reveal" data-service="web-development">
+              <div class="service-number">03</div>
+              <div class="service-header">
+                <div class="service-icon-wrap">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                    <line x1="8" y1="21" x2="16" y2="21"/>
+                    <line x1="12" y1="17" x2="12" y2="21"/>
+                  </svg>
+                </div>
+                <span class="service-badge">Digital Flagships</span>
+              </div>
+              <h3 class="service-title">Website Development</h3>
+              <p class="service-copy">
+                Ultra-fast, visually arresting digital flagships engineered for peak conversion. We pair high-end aesthetics with headless performance, micro-interactions, and accessible architecture that loads in sub-seconds.
+              </p>
+              <ul class="service-specs">
+                <li>Conversion Rate Optimized (CRO) UX/UI Design</li>
+                <li>Headless &amp; Static Web Architecture (Sub-second FCP)</li>
+                <li>Custom Interactive Demos &amp; 3D Web Experiences</li>
+                <li>Enterprise Analytics &amp; A/B Testing Pipelines</li>
+              </ul>
+              <div class="service-footer">
+                <button class="service-cta-btn" data-target-service="Website Development">
+                  <span>Explore Scope</span>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1.75 12.25L12.25 1.75M12.25 1.75H4.2M12.25 1.75V9.8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+                </button>
+              </div>
+            </article>
+
+            <!-- 04: Content Creation -->
+            <article class="service-card reveal" data-service="content-creation">
+              <div class="service-number">04</div>
+              <div class="service-header">
+                <div class="service-icon-wrap">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <polygon points="23 7 16 12 23 17 23 7"/>
+                    <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+                  </svg>
+                </div>
+                <span class="service-badge">Cinematic Media</span>
+              </div>
+              <h3 class="service-title">Content Creation</h3>
+              <p class="service-copy">
+                Commercial-grade visual storytelling crafted to command attention. From studio 4K cinematography and 3D product rendering to viral TikTok hooks and scroll-stopping graphic design that elevates perceived brand value.
+              </p>
+              <ul class="service-specs">
+                <li>High-Concept Commercial &amp; Product Video</li>
+                <li>3D Motion Graphics &amp; Visual Effects (VFX)</li>
+                <li>Modular Creative Assets Built for Paid Ad Scaling</li>
+                <li>Brand Photography &amp; Editorial Art Direction</li>
+              </ul>
+              <div class="service-footer">
+                <button class="service-cta-btn" data-target-service="Content Creation">
+                  <span>Explore Scope</span>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1.75 12.25L12.25 1.75M12.25 1.75H4.2M12.25 1.75V9.8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+                </button>
+              </div>
+            </article>
+
+            <!-- 05: Influencer Marketing & UGC -->
+            <article class="service-card reveal" data-service="influencer-ugc">
+              <div class="service-number">05</div>
+              <div class="service-header">
+                <div class="service-icon-wrap">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                    <circle cx="9" cy="7" r="4"/>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                  </svg>
+                </div>
+                <span class="service-badge">Social Proof</span>
+              </div>
+              <h3 class="service-title">Influencer Marketing &amp; UGC</h3>
+              <p class="service-copy">
+                End-to-end creator partnerships and authentic User Generated Content production. We identify, negotiate, and orchestrate creator campaigns that generate authentic social proof and deliver licensed assets ready for paid whitelisting.
+              </p>
+              <ul class="service-specs">
+                <li>Vetted Creator Discovery &amp; Contract Negotiation</li>
+                <li>High-Converting Native UGC Video Pipelines</li>
+                <li>Creator Ad Whitelisting &amp; Partnership Ads</li>
+                <li>Affiliate &amp; Long-Term Brand Ambassador Programs</li>
+              </ul>
+              <div class="service-footer">
+                <button class="service-cta-btn" data-target-service="Influencer Marketing & UGC">
+                  <span>Explore Scope</span>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1.75 12.25L12.25 1.75M12.25 1.75H4.2M12.25 1.75V9.8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+                </button>
+              </div>
+            </article>
+
+            <!-- 06: WhatsApp Automation -->
+            <article class="service-card reveal" data-service="whatsapp-automation">
+              <div class="service-number">06</div>
+              <div class="service-header">
+                <div class="service-icon-wrap">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                  </svg>
+                </div>
+                <span class="service-badge">Conversational CRM</span>
+              </div>
+              <h3 class="service-title">WhatsApp Automation</h3>
+              <p class="service-copy">
+                Transform WhatsApp into your highest-converting sales and retention channel. We build official WhatsApp Business API integrations featuring automated checkout recovery, instant lead qualification, interactive product catalogs, and VIP broadcast engines.
+              </p>
+              <ul class="service-specs">
+                <li>Official WhatsApp Business API Architecture &amp; Green Tick</li>
+                <li>Instant Lead Qualification &amp; CRM Routing (&lt; 10s response)</li>
+                <li>Cart Abandonment &amp; Payment Recovery Sequences</li>
+                <li>Interactive In-Chat Commerce &amp; Loyalty Flows</li>
+              </ul>
+              <div class="service-footer">
+                <button class="service-cta-btn" data-target-service="WhatsApp Automation">
+                  <span>Explore Scope</span>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1.75 12.25L12.25 1.75M12.25 1.75H4.2M12.25 1.75V9.8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+                </button>
+              </div>
+            </article>
+
+            <!-- 07: Telegram Automation -->
+            <article class="service-card service-card--wide reveal" data-service="telegram-automation">
+              <div class="service-number">07</div>
+              <div class="service-header">
+                <div class="service-icon-wrap">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <line x1="22" y1="2" x2="11" y2="13"/>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                  </svg>
+                </div>
+                <span class="service-badge">Community Engine</span>
+              </div>
+              <h3 class="service-title">Telegram Automation &amp; Mini-Apps</h3>
+              <p class="service-copy">
+                Harness Telegram’s unthrottled reach and interactive ecosystem. We engineer custom Telegram bots, gated premium community subscription funnels, automated market alert bots, and Telegram Web App (TWA) mini-applications for friction-free onboarding.
+              </p>
+              <ul class="service-specs">
+                <li>Custom Bot Development (Python / Node.js) with Instant Webhooks</li>
+                <li>Paid Subscription Access Gates &amp; Automated Renewal Systems</li>
+                <li>Telegram Mini-App (TWA) Web View &amp; In-Chat Commerce</li>
+                <li>Community Moderation &amp; Automated Engagement Loops</li>
+              </ul>
+              <div class="service-footer">
+                <button class="service-cta-btn" data-target-service="Telegram Automation">
+                  <span>Explore Scope</span>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1.75 12.25L12.25 1.75M12.25 1.75H4.2M12.25 1.75V9.8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT / VALUE PROPOSITION SECTION -->
+      <section id="about" class="section about-section">
+        <div class="container">
+          <div class="about-grid">
+            <div class="about-narrative reveal">
+              <div class="section-tag">THE GrowthXmedia ADVANTAGE</div>
+              <h2 class="section-title">
+                Creative without systems is art.<br/>
+                Systems without creative is noise.<br/>
+                <span class="highlight-lime">We build both.</span>
+              </h2>
+              <div class="about-text-blocks">
+                <p>
+                  Most brands hire one agency for performance ads, another boutique for web design, and rely on basic tools for customer messaging. The result? Broken attribution, disjointed brand voice, and massive drop-off at every handoff.
+                </p>
+                <p>
+                  GrowthXmedia was founded on a singular conviction: <strong>exponential growth requires an unbroken chain</strong>. When your visual content feeds directly into algorithmic ad testing, which directs traffic to a sub-second headless landing page, which automatically syncs into instant WhatsApp or Telegram conversational sequences—conversion rates don’t just improve; they compound.
+                </p>
+              </div>
+
+              <!-- Key Differentiators -->
+              <div class="differentiators-list">
+                <div class="diff-item">
+                  <div class="diff-bullet">01</div>
+                  <div>
+                    <h4>Holistic Attribution, Zero Finger-Pointing</h4>
+                    <p>Creative directors and media buyers share the same dashboard and revenue incentives.</p>
+                  </div>
+                </div>
+                <div class="diff-item">
+                  <div class="diff-bullet">02</div>
+                  <div>
+                    <h4>Conversational Retargeting Built-in</h4>
+                    <p>We convert expensive paid ad traffic into lifetime owned relationships on chat apps with 90%+ open rates.</p>
+                  </div>
+                </div>
+                <div class="diff-item">
+                  <div class="diff-bullet">03</div>
+                  <div>
+                    <h4>Obsessive Speed &amp; Performance</h4>
+                    <p>Sub-second page speeds and zero code bloat ensure you never lose a prospect to loading screens.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Flywheel Visual Component -->
+            <div class="about-flywheel-wrap reveal">
+              <div class="flywheel-card">
+                <div class="flywheel-header">
+                  <span class="flywheel-title">THE INTEGRATED GROWTH FLYWHEEL</span>
+                  <span class="flywheel-status">LIVE ARCHITECTURE</span>
+                </div>
+                
+                <div class="flywheel-nodes">
+                  <div class="node-card node-1" tabindex="0">
+                    <span class="node-step">STAGE 1</span>
+                    <h5 class="node-heading">Hook Attention</h5>
+                    <p class="node-desc">High-production cinematic visual assets &amp; UGC creative tailored for algorithmic resonance.</p>
+                  </div>
+                  <div class="node-connector" aria-hidden="true">&darr;</div>
+                  <div class="node-card node-2" tabindex="0">
+                    <span class="node-step">STAGE 2</span>
+                    <h5 class="node-heading">Capture Intent</h5>
+                    <p class="node-desc">Headless, responsive web flagships designed for conversion velocity and zero friction.</p>
+                  </div>
+                  <div class="node-connector" aria-hidden="true">&darr;</div>
+                  <div class="node-card node-3" tabindex="0">
+                    <span class="node-step">STAGE 3</span>
+                    <h5 class="node-heading">Automate Conversion</h5>
+                    <p class="node-desc">Sub-10s WhatsApp &amp; Telegram conversational bots closing leads and recovering checkouts.</p>
+                  </div>
+                  <div class="node-connector" aria-hidden="true">&darr;</div>
+                  <div class="node-card node-4" tabindex="0">
+                    <span class="node-step">STAGE 4</span>
+                    <h5 class="node-heading">Compound LTV &amp; Scale</h5>
+                    <p class="node-desc">Predictive performance media scaling fueled by first-party behavioral CRM signals.</p>
+                  </div>
+                </div>
+
+                <div class="flywheel-footer">
+                  <span class="glow-dot"></span>
+                  <span>Autonomous Growth Synchronization</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- OUR PROCESS SECTION -->
+      <section id="process" class="section process-section">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="section-tag">STRATEGIC METHODOLOGY</div>
+            <h2 class="section-title">Precision engineered.<br/><span class="text-gradient">From blueprint to scale.</span></h2>
+            <p class="section-description">
+              We replace guesswork with an iterative, mathematically grounded framework designed to deliver measurable commercial velocity.
+            </p>
+          </div>
+
+          <div class="process-timeline">
+            <!-- Phase 01 -->
+            <div class="process-step reveal">
+              <div class="process-step-header">
+                <span class="step-num">PHASE 01</span>
+                <span class="step-duration">Week 1-2</span>
+              </div>
+              <h3 class="step-title">Diagnostic &amp; Growth Blueprint</h3>
+              <p class="step-desc">
+                We perform an exhaustive audit of your unit economics, acquisition funnels, competitor creatives, and technical conversion points. We deliver a clear 90-day growth roadmap with prioritized high-impact leverage points.
+              </p>
+              <div class="step-deliverables">
+                <span class="deliv-badge">Funnel &amp; Attribution Audit</span>
+                <span class="deliv-badge">Creative Gap Analysis</span>
+                <span class="deliv-badge">Unit Economics Model</span>
+              </div>
+            </div>
+
+            <!-- Phase 02 -->
+            <div class="process-step reveal">
+              <div class="process-step-header">
+                <span class="step-num">PHASE 02</span>
+                <span class="step-duration">Week 2-4</span>
+              </div>
+              <h3 class="step-title">Creative &amp; Technical Production</h3>
+              <p class="step-desc">
+                Our creative and engineering studios execute in parallel. We produce high-velocity ad creatives, code sub-second conversion landing pages, and configure WhatsApp/Telegram automated conversational bot flows.
+              </p>
+              <div class="step-deliverables">
+                <span class="deliv-badge">Modular Video &amp; Ad Matrix</span>
+                <span class="deliv-badge">Headless Web Development</span>
+                <span class="deliv-badge">Chatbot API Webhooks</span>
+              </div>
+            </div>
+
+            <!-- Phase 03 -->
+            <div class="process-step reveal">
+              <div class="process-step-header">
+                <span class="step-num">PHASE 03</span>
+                <span class="step-duration">Week 4-6</span>
+              </div>
+              <h3 class="step-title">Omnichannel Market Activation</h3>
+              <p class="step-desc">
+                Deploying campaigns across calibrated ad channels with rigorous statistical validation. We activate live creator seeding, launch organic social calendars, and link media traffic directly into responsive chat recovery funnels.
+              </p>
+              <div class="step-deliverables">
+                <span class="deliv-badge">Multi-Platform Campaign Launch</span>
+                <span class="deliv-badge">Live CAPI &amp; Pixel Verification</span>
+                <span class="deliv-badge">Creator Ad Whitelisting</span>
+              </div>
+            </div>
+
+            <!-- Phase 04 -->
+            <div class="process-step reveal">
+              <div class="process-step-header">
+                <span class="step-num">PHASE 04</span>
+                <span class="step-duration">Ongoing</span>
+              </div>
+              <h3 class="step-title">Algorithmic Optimization &amp; Scale</h3>
+              <p class="step-desc">
+                Continuous A/B creative testing, budget reallocation toward top-performing cohorts, and automated retention loops. We double down on winning hooks and scale spend sustainably while safeguarding ROAS.
+              </p>
+              <div class="step-deliverables">
+                <span class="deliv-badge">Weekly Creative Refreshes</span>
+                <span class="deliv-badge">LTV &amp; Cohort Retention Modeling</span>
+                <span class="deliv-badge">Automated Budget Scaling</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ SECTION -->
+      <section id="faq" class="section faq-section">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="section-tag">FREQUENTLY ASKED QUESTIONS</div>
+            <h2 class="section-title">Transparent answers.<br/><span class="text-gradient">No agency jargon.</span></h2>
+          </div>
+
+          <div class="faq-accordion-wrap reveal">
+            <div class="faq-item" tabindex="0">
+              <button class="faq-question" aria-expanded="false">
+                <span>How does GrowthXmedia differ from traditional marketing agencies?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Most agencies operate in silos: media buyers don’t speak with creative directors, and developers don’t understand marketing psychology. GrowthXmedia combines all three into a synchronized flywheel. We don’t just run ads; we build the creatives, code the landing pages, and automate the conversational chat funnels (WhatsApp &amp; Telegram) that convert and retain customers.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item" tabindex="0">
+              <button class="faq-question" aria-expanded="false">
+                <span>What are your typical engagement models?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  We primarily operate on monthly strategic growth retainers starting at a 3-month initial commitment to allow for full diagnostic, build, and algorithmic scaling cycles. For select brands, we also offer discrete sprints for flagship web development or enterprise WhatsApp/Telegram automation architectures.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item" tabindex="0">
+              <button class="faq-question" aria-expanded="false">
+                <span>How does WhatsApp and Telegram automation work with our existing CRM?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  We build on official enterprise APIs (Meta WhatsApp Business Platform and Telegram Bot API). Our automated webhook integrations connect seamlessly into Shopify, WooCommerce, HubSpot, Salesforce, Klaviyo, or custom internal databases to trigger real-time notifications, recovery sequences, and CRM updates without manual friction.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item" tabindex="0">
+              <button class="faq-question" aria-expanded="false">
+                <span>What is your typical turnaround time to launch?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Our Phase 01 Diagnostic and initial Creative/Technical Sprint typically takes 14 to 21 business days. By the end of Week 3, campaigns, conversion pages, and automated sequences are live and collecting real market feedback.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONSULTATION / CLOSING CTA SECTION -->
+      <section id="contact" class="section contact-section">
+        <div class="container">
+          <div class="contact-card-wrapper reveal">
+            <div class="contact-info-col">
+              <div class="section-tag">INITIATE PARTNERSHIP</div>
+              <h2 class="contact-heading">
+                Ready to engineer your <span class="highlight-lime">growth engine?</span>
+              </h2>
+              <p class="contact-subtext">
+                Schedule a confidential strategic consultation. We'll analyze your current digital footprint, discuss growth leverage points, and determine if there is a mutual fit.
+              </p>
+
+              <div class="direct-contact-blocks">
+                <div class="contact-method">
+                  <span class="method-label">Studio Direct</span>
+                  <a href="mailto:hello@growthxmedia.com" class="method-val">hello@growthxmedia.com</a>
+                </div>
+                <div class="contact-method">
+                  <span class="method-label">Office Hubs</span>
+                  <span class="method-val">London &bull; Mumbai &bull; Remote Worldwide</span>
+                </div>
+                <div class="contact-method">
+                  <span class="method-label">Client Capacity</span>
+                  <span class="method-badge">2 Available Engagements for Q4</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive Consultation Form -->
+            <div class="contact-form-col">
+              <form id="consultation-form" class="consultation-form" novalidate>
+                <div class="form-title-wrap">
+                  <h3 class="form-title">Consultation Request</h3>
+                  <p class="form-note">Guaranteed response within 24 business hours.</p>
+                </div>
+
+                <div class="form-group">
+                  <label for="client-name" class="form-label">Full Name <span class="req">*</span></label>
+                  <input type="text" id="client-name" name="name" class="form-input" placeholder="e.g. Alex Morgan" required />
+                  <span class="error-msg" id="name-error">Please enter your name.</span>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="client-email" class="form-label">Work Email <span class="req">*</span></label>
+                    <input type="email" id="client-email" name="email" class="form-input" placeholder="alex@company.com" required />
+                    <span class="error-msg" id="email-error">Please provide a valid business email.</span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="client-company" class="form-label">Company / Website</label>
+                    <input type="text" id="client-company" name="company" class="form-input" placeholder="yourcompany.com" />
+                  </div>
+                </div>
+
+                <!-- Service Interest Selector -->
+                <div class="form-group">
+                  <label class="form-label">Primary Services of Interest <span class="req">*</span></label>
+                  <div class="service-pills-selector" id="service-pills" role="group" aria-label="Select services of interest">
+                    <button type="button" class="pill-option active" data-value="Performance Ads">Performance Ads</button>
+                    <button type="button" class="pill-option" data-value="Website Development">Web Development</button>
+                    <button type="button" class="pill-option" data-value="Social Media Management">Social Media</button>
+                    <button type="button" class="pill-option" data-value="Content Creation">Content &amp; Video</button>
+                    <button type="button" class="pill-option" data-value="Influencer Marketing & UGC">Influencer / UGC</button>
+                    <button type="button" class="pill-option" data-value="WhatsApp Automation">WhatsApp Automation</button>
+                    <button type="button" class="pill-option" data-value="Telegram Automation">Telegram Automation</button>
+                  </div>
+                  <input type="hidden" id="selected-service-input" name="service" value="Performance Ads" />
+                </div>
+
+                <!-- Monthly Growth Budget -->
+                <div class="form-group">
+                  <label for="client-budget" class="form-label">Monthly Growth Budget <span class="req">*</span></label>
+                  <select id="client-budget" name="budget" class="form-select" required>
+                    <option value="" disabled selected>Select anticipated investment tier</option>
+                    <option value="$5,000 - $10,000 / mo">$5,000 &ndash; $10,000 / mo</option>
+                    <option value="$10,000 - $25,000 / mo">$10,000 &ndash; $25,000 / mo</option>
+                    <option value="$25,000 - $50,000+ / mo">$25,000 &ndash; $50,000+ / mo</option>
+                    <option value="Enterprise Custom">Enterprise / Custom Full-Funnel</option>
+                  </select>
+                  <span class="error-msg" id="budget-error">Please select a budget range.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="client-message" class="form-label">Project Details &amp; Objectives <span class="req">*</span></label>
+                  <textarea id="client-message" name="message" class="form-textarea" rows="4" placeholder="Briefly describe your current revenue stage, primary challenges, and what success looks like in 6 months..." required></textarea>
+                  <span class="error-msg" id="message-error">Please provide a brief description of your project.</span>
+                </div>
+
+                <button type="submit" id="submit-btn" class="btn btn-primary btn-block">
+                  <span class="btn-text">Submit Strategy Inquiry</span>
+                  <span class="btn-spinner" aria-hidden="true"></span>
+                  <svg class="icon-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path d="M1.75 12.25L12.25 1.75M12.25 1.75H4.2M12.25 1.75V9.8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </form>
+
+              <!-- Success State -->
+              <div id="form-success-state" class="form-success-card" style="display: none;" role="alert">
+                <div class="success-icon-wrap">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </div>
+                <h3 class="success-title">Consultation Request Received</h3>
+                <p class="success-body">
+                  Thank you, <strong id="success-client-name">there</strong>. Our strategic team has logged your inquiry for <span id="success-service-tag" class="inline-tag">Service</span>. We are reviewing your details and will get back to you within 24 business hours.
+                </p>
+                <div class="success-callout">
+                  <span>Demo Mode Notice:</span> Your submission was verified and logged in the client session. In production, this seamlessly dispatches to your CRM webhook or Slack notifications.
+                </div>
+                <button type="button" id="reset-form-btn" class="btn btn-secondary btn-sm" style="margin-top: 1.5rem;">
+                  Submit Another Inquiry
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- SITE FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <div class="footer-top">
+          <div class="footer-brand-col">
+            <a href="#hero" class="brand-logo footer-logo">
+              <span class="brand-mark"></span>
+              <span class="brand-text">GrowthXmedia</span>
+            </a>
+            <p class="footer-tagline">
+              Digital Growth Studio engineering performance marketing, bespoke web experiences, and omnichannel chat automation for forward-thinking brands.
+            </p>
+            <div class="footer-availability">
+              <span class="status-indicator"></span>
+              <span>Available for Selective Engagements Worldwide</span>
+            </div>
+          </div>
+
+          <div class="footer-nav-col">
+            <h4 class="footer-col-title">Disciplines</h4>
+            <ul class="footer-links">
+              <li><a href="#services" data-select-service="Social Media Management">Social Media Strategy</a></li>
+              <li><a href="#services" data-select-service="Performance Ads">Performance Paid Media</a></li>
+              <li><a href="#services" data-select-service="Website Development">Modern Web Development</a></li>
+              <li><a href="#services" data-select-service="Content Creation">High-Fidelity Content</a></li>
+              <li><a href="#services" data-select-service="Influencer Marketing & UGC">Creator &amp; UGC Pipelines</a></li>
+              <li><a href="#services" data-select-service="WhatsApp Automation">WhatsApp Automation</a></li>
+              <li><a href="#services" data-select-service="Telegram Automation">Telegram Bot Ecosystems</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-nav-col">
+            <h4 class="footer-col-title">Studio</h4>
+            <ul class="footer-links">
+              <li><a href="#about">Philosophy</a></li>
+              <li><a href="#process">Our 4-Phase Process</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#contact">Consultation Form</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-nav-col">
+            <h4 class="footer-col-title">Connect</h4>
+            <ul class="footer-links">
+              <li><a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a></li>
+              <li><a href="https://x.com" target="_blank" rel="noreferrer">X / Twitter</a></li>
+              <li><a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a></li>
+              <li><a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a></li>
+              <li><a href="mailto:hello@growthxmedia.com">hello@growthxmedia.com</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-copy">
+            &copy; <span id="current-year">2026</span> GrowthXmedia. All rights reserved.
+          </p>
+          <div class="footer-meta-notes">
+            <span>Designed with intention &amp; performance</span>
+            <span>&bull;</span>
+            <span id="local-time-display">Studio Time: London 10:00 AM</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top of page">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <path d="M18 15l-6-6-6 6"/>
+      </svg>
+    </button>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
