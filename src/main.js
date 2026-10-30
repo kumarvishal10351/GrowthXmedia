@@ -1,6 +1,6 @@
 /**
- * NOVA — Digital Growth Studio
- * Frontend Architecture & Interactive Engine
+ * ELEVATEXMEDIA — Master Frontend Engine
+ * Modern, accessible, responsive interactions & robust form handling
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -10,8 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollReveal();
   initActiveNav();
   initServiceSelectors();
-  initWorkFilters();
-  initCaseStudyModal();
   initFaqAccordion();
   initConsultationForm();
   initBackToTop();
@@ -42,7 +40,7 @@ function initHeaderScroll() {
   if (!header) return;
 
   const handleScroll = () => {
-    if (window.scrollY > 40) {
+    if (window.scrollY > 30) {
       header.classList.add('scrolled');
     } else {
       header.classList.remove('scrolled');
@@ -114,8 +112,15 @@ function initMobileNav() {
    04. INTERSECTION OBSERVER SCROLL REVEALS
 -------------------------------------------------------------------------- */
 function initScrollReveal() {
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const revealElements = document.querySelectorAll('.reveal');
+  
   if (!revealElements.length) return;
+
+  if (prefersReducedMotion) {
+    revealElements.forEach(el => el.classList.add('revealed'));
+    return;
+  }
 
   const observer = new IntersectionObserver((entries, obs) => {
     entries.forEach(entry => {
@@ -126,8 +131,8 @@ function initScrollReveal() {
     });
   }, {
     root: null,
-    threshold: 0.12,
-    rootMargin: '0px 0px -40px 0px'
+    threshold: 0.05,
+    rootMargin: '0px 0px -10px 0px'
   });
 
   revealElements.forEach(el => observer.observe(el));
@@ -156,7 +161,7 @@ function initActiveNav() {
       }
     });
   }, {
-    rootMargin: '-30% 0px -60% 0px'
+    rootMargin: '-25% 0px -65% 0px'
   });
 
   sections.forEach(section => observer.observe(section));
@@ -192,8 +197,8 @@ function initServiceSelectors() {
         // Activate matching pill
         let matched = false;
         servicePills.forEach(pill => {
-          if (pill.getAttribute('data-value') === targetService || 
-              targetService.toLowerCase().includes(pill.getAttribute('data-value').toLowerCase())) {
+          const pillVal = pill.getAttribute('data-value');
+          if (pillVal === targetService || targetService.toLowerCase().includes(pillVal.toLowerCase())) {
             pill.classList.add('active');
             matched = true;
           } else {
@@ -208,229 +213,82 @@ function initServiceSelectors() {
 
       if (contactSection) {
         contactSection.scrollIntoView({ behavior: 'smooth' });
-        // Focus client name after scroll
         setTimeout(() => {
           const nameInput = document.getElementById('client-name');
           if (nameInput) nameInput.focus();
-        }, 600);
+        }, 500);
       }
     });
   });
 }
 
-/* --------------------------------------------------------------------------
-   07. SELECTED WORK FILTER BAR
--------------------------------------------------------------------------- */
-function initWorkFilters() {
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const projectCards = document.querySelectorAll('.project-card');
 
-  if (!filterBtns.length || !projectCards.length) return;
 
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach(b => {
-        b.classList.remove('active');
-        b.setAttribute('aria-selected', 'false');
-      });
-      btn.classList.add('active');
-      btn.setAttribute('aria-selected', 'true');
 
-      const filter = btn.getAttribute('data-filter');
 
-      projectCards.forEach(card => {
-        const category = card.getAttribute('data-category');
-        if (filter === 'all' || category === filter) {
-          card.style.display = 'flex';
-          setTimeout(() => {
-            card.style.opacity = '1';
-            card.style.transform = 'translateY(0)';
-          }, 20);
-        } else {
-          card.style.opacity = '0';
-          card.style.transform = 'translateY(16px)';
-          setTimeout(() => {
-            card.style.display = 'none';
-          }, 250);
-        }
-      });
-    });
-  });
-}
+
+
+
+
+
+
+
 
 /* --------------------------------------------------------------------------
-   08. CASE STUDY INSPECT MODAL
--------------------------------------------------------------------------- */
-const CASE_STUDIES = {
-  'modal-aether': {
-    badge: 'STUDIO CONCEPT 01',
-    title: 'AETHER — High-Sensory Fragrance House',
-    meta: 'Luxury E-Commerce • Direct to Consumer • Global Launch Blueprint',
-    image: 'https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?q=80&w=1200&auto=format&fit=crop',
-    overview: 'AETHER represents an architectural exercise in luxury digital conversion. The objective was to eliminate the sensory barrier of purchasing high-end niche perfume online without smelling it first.',
-    framework: [
-      'Interactive Web Experience: 3D procedural bottle explorer with an intuitive olfactory note diagnostic algorithm.',
-      'Performance Acquisition: High-aesthetic micro-cinematic Meta & YouTube ads testing 18 narrative hooks around scent longevity.',
-      'WhatsApp VIP Concierge: Post-purchase replenishment bot detecting bottle depletion cycles and offering VIP private pre-orders.',
-      'Results Model: Engineered for 3.4x higher cart size through bespoke discovery sampling sets.'
-    ]
-  },
-  'modal-kronos': {
-    badge: 'STUDIO CONCEPT 02',
-    title: 'KRONOS — Independent Precision Timepieces',
-    meta: 'Swiss Horology • High-Ticket Direct-to-Consumer Funnel',
-    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1200&auto=format&fit=crop',
-    overview: 'Engineered for five-figure luxury timepieces, KRONOS required an acquisition funnel centered on pedigree, horological craftsmanship, and friction-free private consultation booking.',
-    framework: [
-      'High-Intent Search & Video: Google Search high-intent capture paired with 4K macro movements on YouTube.',
-      'VIP Concierge Routing: Dynamic qualification forms filtering serious collectors into private video slots with master watchmakers.',
-      'Conversational Follow-up: Encrypted WhatsApp VIP updates with personalized video messages for prospective buyers.',
-      'Attribution Rigor: Server-Side Meta Conversions API (CAPI) with custom 90-day offline conversion tracking.'
-    ]
-  },
-  'modal-lumen': {
-    badge: 'STUDIO CONCEPT 03',
-    title: 'LUMEN — Next-Gen Liquidity Protocol',
-    meta: 'Decentralized Finance • Web Engineering • Community Flywheel',
-    image: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1200&auto=format&fit=crop',
-    overview: 'A community-first growth blueprint for modern FinTech and decentralized protocols where user trust, developer documentation, and viral community retention are paramount.',
-    framework: [
-      'Headless Documentation Portal: Sub-second search, interactive code samples, and real-time protocol TVL streaming.',
-      'Telegram Community Bot Engine: Automated anti-spam verification, tier-gated governance discussions, and instant liquidity alert feeds.',
-      'Telegram Mini-App (TWA): Lightweight in-chat onboarding allowing users to inspect portfolio balances directly inside Telegram.',
-      'Content Flywheel: Educational motion graphics breaking complex financial mechanics into shareable 30s clips.'
-    ]
-  },
-  'modal-velo': {
-    badge: 'STUDIO CONCEPT 04',
-    title: 'VELO — Urban Electric Performance Superbike',
-    meta: 'Clean Mobility • Creator UGC Pipeline • Dealer Showroom Booking',
-    image: 'https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=1200&auto=format&fit=crop',
-    overview: 'VELO combines high-energy urban lifestyle branding with automated regional dealer logistics to turn online hype into physical dealership test-drives.',
-    framework: [
-      'Creator UGC Production: 24 vetted urban cyclists and mobility influencers generating raw POV riding clips.',
-      'Paid Whitelisting: Running creator-whitelisted TikTok and Meta Spark Ads targeting local metropolitan commuting corridors.',
-      'Automated WhatsApp Booking Bot: In-chat test ride scheduling with automatic geolocation matching to the nearest authorized showroom.',
-      'Automated SMS / WhatsApp Reminders: 94% show-up rate achieved through real-time calendar invites and directions.'
-    ]
-  }
-};
-
-function initCaseStudyModal() {
-  const modal = document.getElementById('case-study-modal');
-  const modalContent = document.getElementById('modal-content');
-  const closeBtn = document.getElementById('modal-close-btn');
-  const inspectBtns = document.querySelectorAll('.project-inspect-btn');
-
-  if (!modal || !modalContent) return;
-
-  const openModal = (caseId) => {
-    const data = CASE_STUDIES[caseId];
-    if (!data) return;
-
-    modalContent.innerHTML = `
-      <span class="modal-badge">${data.badge}</span>
-      <h3 class="modal-title">${data.title}</h3>
-      <p class="modal-meta">${data.meta}</p>
-      <img src="${data.image}" alt="${data.title}" class="modal-img" />
-      <p class="modal-text">${data.overview}</p>
-      <h4 class="modal-breakdown-title">Strategic Architecture & Execution</h4>
-      <ul class="modal-deliverables">
-        ${data.framework.map(item => `<li>${item}</li>`).join('')}
-      </ul>
-      <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-        <a href="#contact" class="btn btn-primary btn-sm modal-cta-btn">
-          <span>Inquire About Similar Architecture</span>
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1.75 12.25L12.25 1.75M12.25 1.75H4.2M12.25 1.75V9.8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
-        </a>
-      </div>
-    `;
-
-    modal.classList.add('open');
-    modal.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
-
-    // Hook modal cta
-    const modalCta = modalContent.querySelector('.modal-cta-btn');
-    if (modalCta) {
-      modalCta.addEventListener('click', () => {
-        closeModal();
-      });
-    }
-  };
-
-  const closeModal = () => {
-    modal.classList.remove('open');
-    modal.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
-  };
-
-  inspectBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const modalId = btn.getAttribute('data-modal');
-      openModal(modalId);
-    });
-  });
-
-  if (closeBtn) closeBtn.addEventListener('click', closeModal);
-
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) closeModal();
-  });
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.classList.contains('open')) {
-      closeModal();
-    }
-  });
-}
-
-/* --------------------------------------------------------------------------
-   09. FAQ ACCORDION INTERACTION
+   09. FAQ ACCORDION INTERACTION (ACCESSIBLE)
 -------------------------------------------------------------------------- */
 function initFaqAccordion() {
   const faqItems = document.querySelectorAll('.faq-item');
   if (!faqItems.length) return;
 
-  faqItems.forEach(item => {
+  faqItems.forEach((item, index) => {
     const questionBtn = item.querySelector('.faq-question');
-    if (!questionBtn) return;
+    const answerDiv = item.querySelector('.faq-answer');
+    if (!questionBtn || !answerDiv) return;
+
+    const answerId = `faq-answer-${index + 1}`;
+    answerDiv.id = answerId;
+    questionBtn.setAttribute('aria-controls', answerId);
 
     questionBtn.addEventListener('click', () => {
-      const isActive = item.classList.contains('active');
-      
-      // Close other accordions
+      const isExpanded = questionBtn.getAttribute('aria-expanded') === 'true';
+
+      // Close all other accordions
       faqItems.forEach(otherItem => {
         otherItem.classList.remove('active');
-        const btn = otherItem.querySelector('.faq-question');
-        if (btn) btn.setAttribute('aria-expanded', 'false');
+        const otherBtn = otherItem.querySelector('.faq-question');
+        if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
       });
 
-      if (!isActive) {
+      if (!isExpanded) {
         item.classList.add('active');
         questionBtn.setAttribute('aria-expanded', 'true');
-      }
-    });
-
-    // Keyboard accessibility Enter / Space
-    item.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' && e.target === item) {
-        questionBtn.click();
+      } else {
+        item.classList.remove('active');
+        questionBtn.setAttribute('aria-expanded', 'false');
       }
     });
   });
 }
 
 /* --------------------------------------------------------------------------
-   10. STRATEGIC CONSULTATION FORM VALIDATION & SIMULATION
+   10. WEB3FORMS CONSULTATION FORM INTEGRATION & HONEST FALLBACK ENGINE
 -------------------------------------------------------------------------- */
 function initConsultationForm() {
   const form = document.getElementById('consultation-form');
   const submitBtn = document.getElementById('submit-btn');
   const successCard = document.getElementById('form-success-state');
+  const errorCard = document.getElementById('form-error-state');
+  const fallbackCard = document.getElementById('form-fallback-state');
   const resetBtn = document.getElementById('reset-form-btn');
+  const retryBtn = document.getElementById('retry-form-btn');
 
-  if (!form || !submitBtn || !successCard) return;
+  if (!form || !submitBtn) return;
+
+  // Web3Forms official submission endpoint & configuration
+  const web3formsEndpoint = import.meta.env.VITE_CONTACT_FORM_ENDPOINT || 'https://api.web3forms.com/submit';
+  const web3formsAccessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+  const targetEmail = import.meta.env.VITE_CONTACT_EMAIL || 'hello@elevatexmedia.com';
 
   const validateEmail = (email) => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
@@ -441,15 +299,17 @@ function initConsultationForm() {
     errorGroups.forEach(group => group.classList.remove('has-error'));
   };
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
     clearErrors();
 
     const nameInput = document.getElementById('client-name');
     const emailInput = document.getElementById('client-email');
+    const phoneInput = document.getElementById('client-phone');
+    const companyInput = document.getElementById('client-company');
+    const serviceInput = document.getElementById('selected-service-input');
     const budgetSelect = document.getElementById('client-budget');
     const messageInput = document.getElementById('client-message');
-    const serviceInput = document.getElementById('selected-service-input');
 
     let isValid = true;
 
@@ -463,47 +323,155 @@ function initConsultationForm() {
       isValid = false;
     }
 
-    if (!budgetSelect.value) {
-      budgetSelect.closest('.form-group').classList.add('has-error');
-      isValid = false;
+    if (!isValid) {
+      const firstError = form.querySelector('.form-group.has-error input');
+      if (firstError) firstError.focus();
+      return;
     }
 
-    if (!messageInput.value.trim() || messageInput.value.trim().length < 8) {
-      messageInput.closest('.form-group').classList.add('has-error');
-      isValid = false;
+    // Build Web3Forms structured submission payload
+    const payload = {
+      name: nameInput.value.trim(),
+      email: emailInput.value.trim(),
+      service: serviceInput ? serviceInput.value : 'General Growth Inquiry',
+      budget: budgetSelect ? budgetSelect.value : 'To Be Discussed',
+      message: messageInput ? messageInput.value.trim() : 'Consultation requested',
+      subject: 'New ElevateXMedia Client Enquiry',
+      from_name: 'ElevateXMedia Consultation Portal'
+    };
+
+    if (phoneInput && phoneInput.value.trim()) {
+      payload.phone = phoneInput.value.trim();
     }
 
-    if (!isValid) return;
+    if (companyInput && companyInput.value.trim()) {
+      payload.company = companyInput.value.trim();
+    }
 
-    // Simulate submission state
-    submitBtn.classList.add('loading');
-    submitBtn.setAttribute('disabled', 'true');
+    // Case 1: Web3Forms access key is configured in environment
+    if (web3formsAccessKey && web3formsAccessKey.trim() !== '') {
+      payload.access_key = web3formsAccessKey.trim();
 
-    setTimeout(() => {
-      submitBtn.classList.remove('loading');
-      submitBtn.removeAttribute('disabled');
+      // Loading state: disable button to prevent duplicate submissions
+      submitBtn.classList.add('loading');
+      submitBtn.setAttribute('disabled', 'true');
 
-      // Populate confirmation details
-      const clientNameSpan = document.getElementById('success-client-name');
-      const serviceTagSpan = document.getElementById('success-service-tag');
-      
-      if (clientNameSpan) clientNameSpan.textContent = nameInput.value.trim();
-      if (serviceTagSpan) serviceTagSpan.textContent = serviceInput.value || 'Strategic Growth';
+      try {
+        const response = await fetch(web3formsEndpoint, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(payload)
+        });
 
-      form.style.display = 'none';
-      successCard.style.display = 'block';
+        const data = await response.json().catch(() => ({}));
 
-      // Scroll to confirmation card
-      successCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }, 750);
+        submitBtn.classList.remove('loading');
+        submitBtn.removeAttribute('disabled');
+
+        if (response.ok && data.success === true) {
+          // Success confirmed by Web3Forms
+          form.style.display = 'none';
+          if (errorCard) errorCard.style.display = 'none';
+          if (fallbackCard) fallbackCard.style.display = 'none';
+          if (successCard) {
+            const clientNameSpan = document.getElementById('success-client-name');
+            const serviceTagSpan = document.getElementById('success-service-tag');
+            if (clientNameSpan) clientNameSpan.textContent = payload.name;
+            if (serviceTagSpan) serviceTagSpan.textContent = payload.service;
+            successCard.style.display = 'block';
+            successCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          }
+          // Clear inputs on genuine delivery success
+          form.reset();
+          clearErrors();
+        } else {
+          // Unsuccessful response from Web3Forms: retain visitor input for retry
+          console.error('Web3Forms returned unsuccessful response:', data);
+          showFormError(data.message || 'Submission was rejected by the form service.');
+        }
+      } catch (err) {
+        console.error('Network error during Web3Forms submission:', err);
+        submitBtn.classList.remove('loading');
+        submitBtn.removeAttribute('disabled');
+        showFormError('Network error or connection timed out.');
+      }
+    } else {
+      // Case 2: No Web3Forms access key configured yet
+      // Provide honest email-client fallback without falsely claiming backend delivery
+      submitBtn.classList.add('loading');
+      submitBtn.setAttribute('disabled', 'true');
+
+      setTimeout(() => {
+        submitBtn.classList.remove('loading');
+        submitBtn.removeAttribute('disabled');
+
+        form.style.display = 'none';
+        if (errorCard) errorCard.style.display = 'none';
+        if (successCard) successCard.style.display = 'none';
+
+        if (fallbackCard) {
+          const fallbackNameSpan = document.getElementById('fallback-client-name');
+          const emailActionBtn = document.getElementById('fallback-email-btn');
+
+          if (fallbackNameSpan) fallbackNameSpan.textContent = payload.name;
+
+          if (emailActionBtn) {
+            const mailSubject = encodeURIComponent(`Project Inquiry: ${payload.service} - ${payload.name}`);
+            const mailBody = encodeURIComponent(
+              `Hi ElevateXMedia Team,\n\n` +
+              `I would like to discuss a project with ElevateXMedia.\n\n` +
+              `• Name: ${payload.name}\n` +
+              `• Email: ${payload.email}\n` +
+              `• Phone: ${payload.phone || 'N/A'}\n` +
+              `• Company / Website: ${payload.company || 'N/A'}\n` +
+              `• Service: ${payload.service}\n` +
+              `• Estimated Investment Tier: ${payload.budget}\n` +
+              `• Project Overview:\n${payload.message || 'Ready to discuss on discovery call.'}\n\n` +
+              `Best regards,\n${payload.name}`
+            );
+            emailActionBtn.href = `mailto:${targetEmail}?subject=${mailSubject}&body=${mailBody}`;
+          }
+
+          fallbackCard.style.display = 'block';
+          fallbackCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      }, 350);
+    }
   });
+
+  function showFormError(reasonText) {
+    form.style.display = 'none';
+    if (successCard) successCard.style.display = 'none';
+    if (fallbackCard) fallbackCard.style.display = 'none';
+    if (errorCard) {
+      const errorReasonSpan = document.getElementById('error-api-reason');
+      if (errorReasonSpan && reasonText) {
+        errorReasonSpan.textContent = `(${reasonText})`;
+      }
+      errorCard.style.display = 'block';
+      errorCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }
 
   if (resetBtn) {
     resetBtn.addEventListener('click', () => {
       form.reset();
       clearErrors();
       form.style.display = 'flex';
-      successCard.style.display = 'none';
+      if (successCard) successCard.style.display = 'none';
+      if (fallbackCard) fallbackCard.style.display = 'none';
+      if (errorCard) errorCard.style.display = 'none';
+    });
+  }
+
+  if (retryBtn) {
+    retryBtn.addEventListener('click', () => {
+      // Retain visitor input for seamless retry
+      form.style.display = 'flex';
+      if (errorCard) errorCard.style.display = 'none';
     });
   }
 }
@@ -532,7 +500,7 @@ function initBackToTop() {
 }
 
 /* --------------------------------------------------------------------------
-   12. STUDIO CLOCK & REAL-TIME STATUS
+   12. STUDIO CLOCK & REAL-TIME STATUS (ACTIVE WORLDWIDE)
 -------------------------------------------------------------------------- */
 function initStudioClock() {
   const timeDisplay = document.getElementById('local-time-display');
@@ -546,57 +514,60 @@ function initStudioClock() {
 
   const updateClock = () => {
     const now = new Date();
-    // Format in London/GMT or client studio time
-    const options = {
-      hour: '2-digit',
-      minute: '2-digit',
-      second: '2-digit',
-      hour12: true,
-      timeZone: 'Europe/London'
-    };
-    try {
-      const timeString = new Intl.DateTimeFormat('en-GB', options).format(now);
-      timeDisplay.textContent = `Studio Time: London ${timeString} GMT`;
-    } catch {
-      timeDisplay.textContent = `Studio Time: Active Worldwide`;
-    }
+    const utcHours = now.getUTCHours().toString().padStart(2, '0');
+    const utcMinutes = now.getUTCMinutes().toString().padStart(2, '0');
+    timeDisplay.textContent = `Operating Globally • ${utcHours}:${utcMinutes} UTC`;
   };
 
   updateClock();
-  setInterval(updateClock, 1000);
+  setInterval(updateClock, 30000);
 }
 
 /* --------------------------------------------------------------------------
-   13. CINEMATIC HERO VIDEO PLAYBACK ENGINE
+   13. CINEMATIC HERO VIDEO PLAYBACK ENGINE (FAILSAFE AUTOPLAY)
 -------------------------------------------------------------------------- */
 function initHeroVideo() {
   const video = document.getElementById('hero-video');
   if (!video) return;
 
+  // Enforce browser-compliant muted autoplay flags
   video.muted = true;
+  video.defaultMuted = true;
   video.playsInline = true;
+  video.setAttribute('muted', '');
+  video.setAttribute('playsinline', '');
+  video.setAttribute('webkit-playsinline', 'true');
+  video.setAttribute('autoplay', '');
 
-  const attemptPlay = () => {
+  const startPlayback = () => {
+    video.muted = true;
     const playPromise = video.play();
     if (playPromise !== undefined) {
       playPromise.catch(() => {
-        // Fallback: start video on first scroll or touch
-        const onFirstInteract = () => {
+        // Fallback: start immediately on first user touch, click, scroll or keypress
+        const kickstart = () => {
+          video.muted = true;
           video.play().catch(() => {});
-          window.removeEventListener('scroll', onFirstInteract);
-          window.removeEventListener('click', onFirstInteract);
-          window.removeEventListener('touchstart', onFirstInteract);
+          ['scroll', 'click', 'touchstart', 'pointerdown', 'keydown'].forEach(evt => {
+            window.removeEventListener(evt, kickstart);
+          });
         };
-        window.addEventListener('scroll', onFirstInteract, { once: true, passive: true });
-        window.addEventListener('click', onFirstInteract, { once: true });
-        window.addEventListener('touchstart', onFirstInteract, { once: true, passive: true });
+        ['scroll', 'click', 'touchstart', 'pointerdown', 'keydown'].forEach(evt => {
+          window.addEventListener(evt, kickstart, { once: true, passive: true });
+        });
       });
     }
   };
 
-  if (video.readyState >= 2) {
-    attemptPlay();
-  } else {
-    video.addEventListener('canplay', attemptPlay, { once: true });
-  }
+  // Attempt immediate playback
+  startPlayback();
+
+  // Also hook into media ready events in case buffer is loading
+  video.addEventListener('canplay', () => {
+    if (video.paused) startPlayback();
+  }, { once: true });
+
+  video.addEventListener('loadeddata', () => {
+    if (video.paused) startPlayback();
+  }, { once: true });
 }

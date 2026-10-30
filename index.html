@@ -3,30 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <title>GrowthXmedia — Digital Growth &amp; Performance Architecture</title>
-    <meta name="description" content="GrowthXmedia is a premier digital growth studio engineering performance marketing, bespoke web experiences, high-fidelity content, and WhatsApp &amp; Telegram automation." />
-    <meta name="keywords" content="GrowthXmedia, digital marketing agency, performance ads, web development, content creation, WhatsApp automation, Telegram automation, growth studio" />
-    <meta name="theme-color" content="#070c09" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <title>ElevateXMedia | Digital Marketing &amp; Web Development</title>
+    <meta name="description" content="ElevateXMedia helps businesses grow through social media management, performance marketing, website development, content creation, and marketing automation." />
+    <meta name="keywords" content="ElevateXMedia, digital marketing agency, performance marketing, web development, content creation, social media management, WhatsApp automation, Telegram automation" />
+    <meta name="theme-color" content="#09090B" />
+    <link rel="canonical" href="https://elevatexmedia.com/" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" type="image/png" href="/favicon.png" />
     
     <!-- Open Graph / Social Meta -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="GrowthXmedia — Digital Growth &amp; Performance Architecture" />
-    <meta property="og:description" content="Turning raw digital attention into predictable, compounding revenue through creative strategy and omnichannel automation." />
-    <meta property="og:site_name" content="GrowthXmedia" />
+    <meta property="og:title" content="ElevateXMedia | Digital Marketing &amp; Web Development" />
+    <meta property="og:description" content="We Elevate Brands. You Grow. Comprehensive digital marketing, performance advertising, custom web development, and conversational automation." />
+    <meta property="og:site_name" content="ElevateXMedia" />
+    <meta property="og:url" content="https://elevatexmedia.com/" />
+    <meta property="og:image" content="/logo.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="GrowthXmedia — Digital Growth Studio" />
-    <meta name="twitter:description" content="High-Performance Marketing, Bespoke Web &amp; Conversational Automation." />
+    <meta name="twitter:title" content="ElevateXMedia — Digital Marketing &amp; Web Development" />
+    <meta name="twitter:description" content="We Elevate Brands. You Grow. Social media, performance ads, web development, content creation &amp; marketing automation." />
+    <meta name="twitter:image" content="/logo.png" />
 
     <!-- Google Fonts Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
     
-    <!-- Preload Hero Poster to prevent background flash -->
+    <!-- Preload Hero Poster -->
     <link rel="preload" as="image" href="/videos/hero-poster.webp" type="image/webp" />
 
     <link rel="stylesheet" href="/src/style.css" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "ElevateXMedia",
+      "url": "https://elevatexmedia.com",
+      "logo": "https://elevatexmedia.com/logo.png",
+      "description": "ElevateXMedia helps businesses grow through social media management, performance marketing, website development, content creation, and marketing automation.",
+      "slogan": "We Elevate Brands. You Grow.",
+      "email": "hello@elevatexmedia.com",
+      "knowsAbout": [
+        "Social Media Management",
+        "Performance Marketing",
+        "Website Design & Development",
+        "Content Creation",
+        "Influencer Marketing & UGC",
+        "WhatsApp Automation",
+        "Telegram Automation"
+      ]
+    }
+    </script>
   </head>
   <body>
     <!-- Top Progress Bar -->
@@ -35,11 +65,9 @@
     <!-- Site Header / Navigation -->
     <header class="site-header" id="header">
       <div class="header-inner container">
-        <a href="#hero" class="brand-logo" aria-label="GrowthXmedia Home">
-          <picture>
-            <source srcset="/logo.webp" type="image/webp" />
-            <img src="/logo.png" alt="GrowthXmedia — Digital Growth Partner" class="brand-logo-img" width="1924" height="436" fetchpriority="high" />
-          </picture>
+        <a href="#hero" class="brand-logo" aria-label="ElevateXMedia Home">
+          <img src="/sign-logo.png" alt="ElevateX Emblem" class="brand-sign-img" width="1374" height="1145" />
+          <img src="/logo.png" alt="ElevateXMedia — We Elevate Brands. You Grow." class="brand-logo-img" width="1010" height="424" fetchpriority="high" />
         </a>
 
         <!-- Desktop Navigation -->
@@ -48,6 +76,7 @@
             <li><a href="#services" class="nav-link">Services</a></li>
             <li><a href="#about" class="nav-link">Philosophy</a></li>
             <li><a href="#process" class="nav-link">Process</a></li>
+            <li><a href="#reviews" class="nav-link">Reviews</a></li>
             <li><a href="#faq" class="nav-link">FAQ</a></li>
           </ul>
         </nav>
@@ -74,30 +103,37 @@
     <div id="mobile-nav" class="mobile-drawer" aria-hidden="true">
       <div class="mobile-drawer-inner">
         <div class="mobile-drawer-header">
-          <span class="mobile-brand">GrowthXmedia / NAVIGATION</span>
+          <span class="mobile-brand">ElevateXMedia / NAVIGATION</span>
           <button id="mobile-close-btn" class="drawer-close-btn" aria-label="Close menu">&times;</button>
         </div>
         <nav class="mobile-links" aria-label="Mobile Navigation Links">
           <a href="#services" class="mobile-link"><span>01</span> Services</a>
           <a href="#about" class="mobile-link"><span>02</span> Philosophy</a>
           <a href="#process" class="mobile-link"><span>03</span> Our Process</a>
-          <a href="#faq" class="mobile-link"><span>04</span> FAQ</a>
-          <a href="#contact" class="mobile-link"><span>05</span> Start a Project</a>
+          <a href="#reviews" class="mobile-link"><span>04</span> Client Reviews</a>
+          <a href="#faq" class="mobile-link"><span>05</span> FAQ</a>
+          <a href="#contact" class="mobile-link"><span>06</span> Start a Project</a>
         </nav>
         <div class="mobile-drawer-footer">
-          <p class="mobile-contact-title">Direct Studio Line</p>
-          <a href="mailto:hello@growthxmedia.com" class="mobile-email">hello@growthxmedia.com</a>
-          <div class="mobile-socials">
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="https://x.com" target="_blank" rel="noreferrer">X (Twitter)</a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
-          </div>
+          <p class="mobile-contact-title">Direct Studio Contact</p>
+          <a href="mailto:hello@elevatexmedia.com" class="mobile-email">hello@elevatexmedia.com</a>
+          <p style="font-size: 0.75rem; color: var(--text-subtle); margin-top: 0.5rem;">"We Elevate Brands. You Grow."</p>
         </div>
       </div>
     </div>
     <div id="mobile-nav-backdrop" class="mobile-drawer-backdrop" aria-hidden="true"></div>
 
-    <main id="main-content">
+    <!-- Aura Gradient: "Neon Sludge" Atmospheric Layered Background (Fixed Viewport Backdrop) -->
+    <div class="aura-bg" aria-hidden="true">
+      <div class="aura-layer-1"></div>
+      <div class="aura-layer-2"></div>
+      <div class="aura-layer-3"></div>
+      <div class="aura-layer-4"></div>
+    </div>
+
+    <!-- Page Content (sits ABOVE the atmospheric layers) -->
+    <div class="page-content" style="position: relative; z-index: 1;">
+      <main id="main-content">
       <!-- HERO SECTION -->
       <section id="hero" class="hero-section">
         <!-- Video Background with Poster Fallback -->
@@ -105,10 +141,12 @@
           <video 
             id="hero-video"
             class="hero-video" 
+            src="/videos/hero-bg.mp4"
             autoplay 
             muted 
             loop 
             playsinline 
+            webkit-playsinline="true"
             preload="auto"
             poster="/videos/hero-poster.webp"
           >
@@ -119,44 +157,49 @@
 
         <div class="container hero-container">
           <div class="hero-content">
+            <div class="hero-eyebrow reveal" style="font-family: var(--font-mono); font-size: 0.82rem; font-weight: 700; letter-spacing: 0.15em; color: var(--accent-lime); margin-bottom: 1.25rem;">
+              DIGITAL GROWTH PARTNER FOR AMBITIOUS BRANDS
+            </div>
+
             <h1 class="hero-title reveal">
-              We turn raw digital attention into <span class="highlight-lime">compounding revenue.</span>
+              We Build Brands That<br />
+              <span class="highlight-lime">Move Business Forward.</span>
             </h1>
 
             <p class="hero-subtitle reveal">
-              GrowthXmedia unifies high-concept creative, performance media, modern web architecture, and automated conversational funnels into one cohesive growth engine.
+              From social media and performance advertising to conversion-focused websites, content creation, and marketing automation, we help businesses build a stronger digital presence and create more opportunities for growth.
             </p>
 
             <div class="hero-actions reveal">
               <a href="#contact" class="btn btn-primary btn-lg">
-                <span>Book Strategy Consultation</span>
+                <span>Let's Grow Your Business</span>
                 <svg class="icon-arrow" width="16" height="16" viewBox="0 0 14 14" fill="none">
                   <path d="M1.75 12.25L12.25 1.75M12.25 1.75H4.2M12.25 1.75V9.8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </a>
               <a href="#services" class="btn btn-secondary btn-lg">
                 <span class="btn-play-icon"></span>
-                <span>Explore Disciplines</span>
+                <span>Explore Our Services</span>
               </a>
             </div>
 
-            <!-- Trust / Philosophy Pillars -->
+            <!-- Authentic Agency Value Pillars -->
             <div class="hero-stats-grid reveal">
               <div class="stat-item">
                 <span class="stat-number">7</span>
-                <span class="stat-label">Integrated Disciplines</span>
+                <span class="stat-label">Core Growth Disciplines</span>
               </div>
               <div class="stat-item">
-                <span class="stat-number">100%</span>
-                <span class="stat-label">Bespoke Full-Funnel Architecture</span>
+                <span class="stat-number">Aligned</span>
+                <span class="stat-label">Strategy, Creative &amp; Tech</span>
               </div>
               <div class="stat-item">
-                <span class="stat-number">&lt; 1s</span>
-                <span class="stat-label">Ultra-Fast Conversion Web Vitals</span>
+                <span class="stat-number">Fast</span>
+                <span class="stat-label">Conversion-Focused Web Architecture</span>
               </div>
               <div class="stat-item">
-                <span class="stat-number">24/7</span>
-                <span class="stat-label">WhatsApp &amp; Telegram Automation</span>
+                <span class="stat-number">Automated</span>
+                <span class="stat-label">Lead Routing &amp; Messaging</span>
               </div>
             </div>
           </div>
@@ -167,7 +210,7 @@
           <span class="mouse-scroll">
             <span class="mouse-wheel"></span>
           </span>
-          <span class="scroll-label">EXPLORE DISCIPLINES</span>
+          <span class="scroll-label">EXPLORE SERVICES</span>
         </a>
       </section>
 
@@ -175,17 +218,17 @@
       <div class="marquee-strip" aria-hidden="true">
         <div class="marquee-track">
           <span class="marquee-item">PERFORMANCE MARKETING <span class="marquee-dot">✦</span></span>
-          <span class="marquee-item">CONVERSATIONAL AI &amp; AUTOMATION <span class="marquee-dot">✦</span></span>
-          <span class="marquee-item">HIGH-VELOCITY CREATIVE <span class="marquee-dot">✦</span></span>
-          <span class="marquee-item">HEADLESS WEB EXPERIENCES <span class="marquee-dot">✦</span></span>
-          <span class="marquee-item">WHATSAPP COMMERCE FUNNELS <span class="marquee-dot">✦</span></span>
-          <span class="marquee-item">TELEGRAM ECOSYSTEMS <span class="marquee-dot">✦</span></span>
+          <span class="marquee-item">CONVERSATIONAL AUTOMATION <span class="marquee-dot">✦</span></span>
+          <span class="marquee-item">CONTENT CREATION <span class="marquee-dot">✦</span></span>
+          <span class="marquee-item">MODERN WEB EXPERIENCES <span class="marquee-dot">✦</span></span>
+          <span class="marquee-item">INFLUENCER MARKETING &amp; UGC <span class="marquee-dot">✦</span></span>
+          <span class="marquee-item">SOCIAL MEDIA MANAGEMENT <span class="marquee-dot">✦</span></span>
           <span class="marquee-item">PERFORMANCE MARKETING <span class="marquee-dot">✦</span></span>
-          <span class="marquee-item">CONVERSATIONAL AI &amp; AUTOMATION <span class="marquee-dot">✦</span></span>
-          <span class="marquee-item">HIGH-VELOCITY CREATIVE <span class="marquee-dot">✦</span></span>
-          <span class="marquee-item">HEADLESS WEB EXPERIENCES <span class="marquee-dot">✦</span></span>
-          <span class="marquee-item">WHATSAPP COMMERCE FUNNELS <span class="marquee-dot">✦</span></span>
-          <span class="marquee-item">TELEGRAM ECOSYSTEMS <span class="marquee-dot">✦</span></span>
+          <span class="marquee-item">CONVERSATIONAL AUTOMATION <span class="marquee-dot">✦</span></span>
+          <span class="marquee-item">CONTENT CREATION <span class="marquee-dot">✦</span></span>
+          <span class="marquee-item">MODERN WEB EXPERIENCES <span class="marquee-dot">✦</span></span>
+          <span class="marquee-item">INFLUENCER MARKETING &amp; UGC <span class="marquee-dot">✦</span></span>
+          <span class="marquee-item">SOCIAL MEDIA MANAGEMENT <span class="marquee-dot">✦</span></span>
         </div>
       </div>
 
@@ -193,14 +236,14 @@
       <section id="services" class="section services-section">
         <div class="container">
           <div class="section-header reveal">
-            <div class="section-tag">OUR DISCIPLINES</div>
+            <div class="section-tag">AGENCY CAPABILITIES</div>
             <h2 class="section-title">Seven specialized services.<br/><span class="text-gradient">One unified growth flywheel.</span></h2>
             <p class="section-description">
-              Traditional agencies isolate media buying from creative and tech. At GrowthXmedia, all seven core capabilities operate as an interconnected revenue infrastructure.
+              We bring media strategy, creative production, web engineering, and conversational automation together so your brand communicates clearly and grows sustainably.
             </p>
           </div>
 
-          <!-- 7 Visually Distinct Service Cards -->
+          <!-- 7 Core Service Cards -->
           <div class="services-grid">
             <!-- 01: Social Media Management -->
             <article class="service-card service-card--featured reveal" data-service="social-media">
@@ -211,27 +254,29 @@
                     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
                   </svg>
                 </div>
-                <span class="service-badge">Organic Authority</span>
+                <span class="service-badge">Brand Presence</span>
               </div>
               <h3 class="service-title">Social Media Management</h3>
+              <h4 style="font-size: 1.05rem; color: var(--accent-lime); margin-bottom: 0.75rem; font-family: var(--font-display);">Build a Consistent Brand Presence.</h4>
               <p class="service-copy">
-                Architecting cultural relevance and algorithmic momentum. We build narrative content calendars, high-retention short-form video strategies, and executive brand positioning that transforms passive followers into loyal brand advocates.
+                Plan, create, and manage social media content that communicates your brand clearly and keeps your business connected with its audience.
               </p>
               <ul class="service-specs">
-                <li>Editorial Calendar &amp; Content Programming</li>
-                <li>Community Management &amp; Brand Sentiment</li>
-                <li>Algorithmic Short-Form Architecture (Reels/Shorts/TikTok)</li>
-                <li>Executive Thought Leadership Positioning</li>
+                <li>Content Strategy &amp; Editorial Planning</li>
+                <li>Content Calendars &amp; Publishing</li>
+                <li>Social Media Creatives &amp; Assets</li>
+                <li>Community Management &amp; Engagement</li>
+                <li>Performance Reporting &amp; Insights</li>
               </ul>
               <div class="service-footer">
                 <button class="service-cta-btn" data-target-service="Social Media Management">
-                  <span>Explore Scope</span>
+                  <span>Discuss this service</span>
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1.75 12.25L12.25 1.75M12.25 1.75H4.2M12.25 1.75V9.8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
                 </button>
               </div>
             </article>
 
-            <!-- 02: Performance Ads -->
+            <!-- 02: Performance Marketing -->
             <article class="service-card reveal" data-service="performance-ads">
               <div class="service-number">02</div>
               <div class="service-header">
@@ -242,25 +287,27 @@
                 </div>
                 <span class="service-badge">Paid Acquisition</span>
               </div>
-              <h3 class="service-title">Performance Ads</h3>
+              <h3 class="service-title">Performance Marketing</h3>
+              <h4 style="font-size: 1.05rem; color: var(--accent-lime); margin-bottom: 0.75rem; font-family: var(--font-display);">Reach the Right Audience.</h4>
               <p class="service-copy">
-                Data-driven customer acquisition across Meta, Google Search/Shopping, YouTube, TikTok, and programmatic networks. Rigorous creative iteration paired with predictive bidding algorithms to maximize Return On Ad Spend.
+                Plan and optimize paid campaigns designed around your business objectives, target audience, and available budget.
               </p>
               <ul class="service-specs">
-                <li>Omnichannel Media Buying &amp; Bidding Strategies</li>
-                <li>Dynamic Creative Testing (DCT) Matrices</li>
-                <li>Server-Side Tracking (CAPI) &amp; Attribution Modeling</li>
-                <li>Full-Funnel Retargeting &amp; Churn Prevention</li>
+                <li>Paid Campaign Strategy &amp; Setup</li>
+                <li>Audience Targeting &amp; Segmentation</li>
+                <li>Creative Testing &amp; Ad Iteration</li>
+                <li>Ongoing Campaign Optimization</li>
+                <li>Transparent Performance Reporting</li>
               </ul>
               <div class="service-footer">
-                <button class="service-cta-btn" data-target-service="Performance Ads">
-                  <span>Explore Scope</span>
+                <button class="service-cta-btn" data-target-service="Performance Marketing">
+                  <span>Discuss this service</span>
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1.75 12.25L12.25 1.75M12.25 1.75H4.2M12.25 1.75V9.8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
                 </button>
               </div>
             </article>
 
-            <!-- 03: Website Development -->
+            <!-- 03: Website Design & Development -->
             <article class="service-card reveal" data-service="web-development">
               <div class="service-number">03</div>
               <div class="service-header">
@@ -271,21 +318,23 @@
                     <line x1="12" y1="17" x2="12" y2="21"/>
                   </svg>
                 </div>
-                <span class="service-badge">Digital Flagships</span>
+                <span class="service-badge">Web &amp; CRO</span>
               </div>
-              <h3 class="service-title">Website Development</h3>
+              <h3 class="service-title">Website Design &amp; Development</h3>
+              <h4 style="font-size: 1.05rem; color: var(--accent-lime); margin-bottom: 0.75rem; font-family: var(--font-display);">Turn Visitors Into Opportunities.</h4>
               <p class="service-copy">
-                Ultra-fast, visually arresting digital flagships engineered for peak conversion. We pair high-end aesthetics with headless performance, micro-interactions, and accessible architecture that loads in sub-seconds.
+                Build responsive websites and landing pages that communicate your value, deliver a strong user experience, and make it easier for visitors to take action.
               </p>
               <ul class="service-specs">
-                <li>Conversion Rate Optimized (CRO) UX/UI Design</li>
-                <li>Headless &amp; Static Web Architecture (Sub-second FCP)</li>
-                <li>Custom Interactive Demos &amp; 3D Web Experiences</li>
-                <li>Enterprise Analytics &amp; A/B Testing Pipelines</li>
+                <li>Custom Website &amp; Landing Page Design</li>
+                <li>Responsive Front-End Development</li>
+                <li>Conversion-Focused Layouts &amp; Architecture</li>
+                <li>Contact Forms &amp; Lead Ingestion</li>
+                <li>Technical SEO Fundamentals</li>
               </ul>
               <div class="service-footer">
-                <button class="service-cta-btn" data-target-service="Website Development">
-                  <span>Explore Scope</span>
+                <button class="service-cta-btn" data-target-service="Website Design & Development">
+                  <span>Discuss this service</span>
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1.75 12.25L12.25 1.75M12.25 1.75H4.2M12.25 1.75V9.8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
                 </button>
               </div>
@@ -301,21 +350,23 @@
                     <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
                   </svg>
                 </div>
-                <span class="service-badge">Cinematic Media</span>
+                <span class="service-badge service-badge--purple">Creative Media</span>
               </div>
               <h3 class="service-title">Content Creation</h3>
+              <h4 style="font-size: 1.05rem; color: var(--accent-lime); margin-bottom: 0.75rem; font-family: var(--font-display);">Create Content Worth Noticing.</h4>
               <p class="service-copy">
-                Commercial-grade visual storytelling crafted to command attention. From studio 4K cinematography and 3D product rendering to viral TikTok hooks and scroll-stopping graphic design that elevates perceived brand value.
+                Develop visual and written content that communicates your message and supports your brand's marketing goals.
               </p>
               <ul class="service-specs">
-                <li>High-Concept Commercial &amp; Product Video</li>
-                <li>3D Motion Graphics &amp; Visual Effects (VFX)</li>
-                <li>Modular Creative Assets Built for Paid Ad Scaling</li>
-                <li>Brand Photography &amp; Editorial Art Direction</li>
+                <li>Social Media Creatives &amp; Design</li>
+                <li>Short-Form Video Concepts &amp; Editing</li>
+                <li>Promotional Graphics &amp; Product Assets</li>
+                <li>Advertising Creative Iteration</li>
+                <li>Content Planning &amp; Brand Consistency</li>
               </ul>
               <div class="service-footer">
                 <button class="service-cta-btn" data-target-service="Content Creation">
-                  <span>Explore Scope</span>
+                  <span>Discuss this service</span>
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1.75 12.25L12.25 1.75M12.25 1.75H4.2M12.25 1.75V9.8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
                 </button>
               </div>
@@ -333,21 +384,23 @@
                     <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
                   </svg>
                 </div>
-                <span class="service-badge">Social Proof</span>
+                <span class="service-badge">Creator Relations</span>
               </div>
               <h3 class="service-title">Influencer Marketing &amp; UGC</h3>
+              <h4 style="font-size: 1.05rem; color: var(--accent-lime); margin-bottom: 0.75rem; font-family: var(--font-display);">Create More Authentic Brand Connections.</h4>
               <p class="service-copy">
-                End-to-end creator partnerships and authentic User Generated Content production. We identify, negotiate, and orchestrate creator campaigns that generate authentic social proof and deliver licensed assets ready for paid whitelisting.
+                Plan creator collaborations and user-generated-style content that aligns with your brand, audience, and campaign objectives.
               </p>
               <ul class="service-specs">
-                <li>Vetted Creator Discovery &amp; Contract Negotiation</li>
-                <li>High-Converting Native UGC Video Pipelines</li>
-                <li>Creator Ad Whitelisting &amp; Partnership Ads</li>
-                <li>Affiliate &amp; Long-Term Brand Ambassador Programs</li>
+                <li>Creator Research &amp; Outreach</li>
+                <li>Collaboration Planning &amp; Briefs</li>
+                <li>Campaign Coordination &amp; Logistics</li>
+                <li>Authentic UGC Concepts</li>
+                <li>Campaign Deliverable Tracking &amp; Reporting</li>
               </ul>
               <div class="service-footer">
                 <button class="service-cta-btn" data-target-service="Influencer Marketing & UGC">
-                  <span>Explore Scope</span>
+                  <span>Discuss this service</span>
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1.75 12.25L12.25 1.75M12.25 1.75H4.2M12.25 1.75V9.8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
                 </button>
               </div>
@@ -362,21 +415,23 @@
                     <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
                   </svg>
                 </div>
-                <span class="service-badge">Conversational CRM</span>
+                <span class="service-badge">Conversational Workflows</span>
               </div>
               <h3 class="service-title">WhatsApp Automation</h3>
+              <h4 style="font-size: 1.05rem; color: var(--accent-lime); margin-bottom: 0.75rem; font-family: var(--font-display);">Make Customer Communication Easier.</h4>
               <p class="service-copy">
-                Transform WhatsApp into your highest-converting sales and retention channel. We build official WhatsApp Business API integrations featuring automated checkout recovery, instant lead qualification, interactive product catalogs, and VIP broadcast engines.
+                Streamline supported customer communication and lead-management workflows using appropriate WhatsApp Business tools and integrations.
               </p>
               <ul class="service-specs">
-                <li>Official WhatsApp Business API Architecture &amp; Green Tick</li>
-                <li>Instant Lead Qualification &amp; CRM Routing (&lt; 10s response)</li>
-                <li>Cart Abandonment &amp; Payment Recovery Sequences</li>
-                <li>Interactive In-Chat Commerce &amp; Loyalty Flows</li>
+                <li>Automated Responses &amp; Welcome Flows</li>
+                <li>Lead Qualification Workflows</li>
+                <li>Customer Order &amp; Booking Notifications</li>
+                <li>Follow-Up Communication Sequences</li>
+                <li>CRM Integrations where supported</li>
               </ul>
               <div class="service-footer">
                 <button class="service-cta-btn" data-target-service="WhatsApp Automation">
-                  <span>Explore Scope</span>
+                  <span>Discuss this service</span>
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1.75 12.25L12.25 1.75M12.25 1.75H4.2M12.25 1.75V9.8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
                 </button>
               </div>
@@ -392,21 +447,23 @@
                     <polygon points="22 2 15 22 11 13 2 9 22 2"/>
                   </svg>
                 </div>
-                <span class="service-badge">Community Engine</span>
+                <span class="service-badge service-badge--purple">Community Utilities</span>
               </div>
-              <h3 class="service-title">Telegram Automation &amp; Mini-Apps</h3>
+              <h3 class="service-title">Telegram Automation</h3>
+              <h4 style="font-size: 1.05rem; color: var(--accent-lime); margin-bottom: 0.75rem; font-family: var(--font-display);">Automate Repetitive Community Tasks.</h4>
               <p class="service-copy">
-                Harness Telegram’s unthrottled reach and interactive ecosystem. We engineer custom Telegram bots, gated premium community subscription funnels, automated market alert bots, and Telegram Web App (TWA) mini-applications for friction-free onboarding.
+                Build Telegram bots and workflows that simplify supported business communication, onboarding, notifications, and community operations.
               </p>
               <ul class="service-specs">
-                <li>Custom Bot Development (Python / Node.js) with Instant Webhooks</li>
-                <li>Paid Subscription Access Gates &amp; Automated Renewal Systems</li>
-                <li>Telegram Mini-App (TWA) Web View &amp; In-Chat Commerce</li>
-                <li>Community Moderation &amp; Automated Engagement Loops</li>
+                <li>Custom Telegram Bots &amp; Utilities</li>
+                <li>Automated Notifications &amp; Alerts</li>
+                <li>Community Onboarding &amp; Verification</li>
+                <li>Moderation &amp; Member Management</li>
+                <li>Custom Webhook &amp; App Integrations</li>
               </ul>
               <div class="service-footer">
                 <button class="service-cta-btn" data-target-service="Telegram Automation">
-                  <span>Explore Scope</span>
+                  <span>Discuss this service</span>
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1.75 12.25L12.25 1.75M12.25 1.75H4.2M12.25 1.75V9.8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
                 </button>
               </div>
@@ -415,47 +472,62 @@
         </div>
       </section>
 
-      <!-- ABOUT / VALUE PROPOSITION SECTION -->
+
+
+      <!-- ABOUT / PHILOSOPHY SECTION -->
       <section id="about" class="section about-section">
         <div class="container">
           <div class="about-grid">
             <div class="about-narrative reveal">
-              <div class="section-tag">THE GrowthXmedia ADVANTAGE</div>
+              <div class="section-tag">OUR PHILOSOPHY</div>
               <h2 class="section-title">
-                Creative without systems is art.<br/>
-                Systems without creative is noise.<br/>
-                <span class="highlight-lime">We build both.</span>
+                Growth Starts With<br/>
+                <span class="highlight-lime">the Right Approach.</span>
               </h2>
               <div class="about-text-blocks">
                 <p>
-                  Most brands hire one agency for performance ads, another boutique for web design, and rely on basic tools for customer messaging. The result? Broken attribution, disjointed brand voice, and massive drop-off at every handoff.
+                  We believe effective digital marketing combines clear strategy, thoughtful creative work, and consistent execution. ElevateXMedia brings these elements together to help businesses strengthen their online presence and pursue meaningful growth.
                 </p>
                 <p>
-                  GrowthXmedia was founded on a singular conviction: <strong>exponential growth requires an unbroken chain</strong>. When your visual content feeds directly into algorithmic ad testing, which directs traffic to a sub-second headless landing page, which automatically syncs into instant WhatsApp or Telegram conversational sequences—conversion rates don’t just improve; they compound.
+                  Rather than treating web development, creative production, and digital campaigns as isolated tasks, we align them into a coordinated effort that communicates clearly and respects your budget.
                 </p>
               </div>
 
-              <!-- Key Differentiators -->
+              <!-- Working Principles -->
               <div class="differentiators-list">
                 <div class="diff-item">
                   <div class="diff-bullet">01</div>
                   <div>
-                    <h4>Holistic Attribution, Zero Finger-Pointing</h4>
-                    <p>Creative directors and media buyers share the same dashboard and revenue incentives.</p>
+                    <h4>Understand the business first.</h4>
+                    <p>We begin by learning your goals, audience, unit economics, and operational reality before proposing solutions.</p>
                   </div>
                 </div>
                 <div class="diff-item">
                   <div class="diff-bullet">02</div>
                   <div>
-                    <h4>Conversational Retargeting Built-in</h4>
-                    <p>We convert expensive paid ad traffic into lifetime owned relationships on chat apps with 90%+ open rates.</p>
+                    <h4>Develop a strategy around the actual objective.</h4>
+                    <p>Every creative asset, campaign, and webpage is structured to serve a clear business purpose.</p>
                   </div>
                 </div>
                 <div class="diff-item">
                   <div class="diff-bullet">03</div>
                   <div>
-                    <h4>Obsessive Speed &amp; Performance</h4>
-                    <p>Sub-second page speeds and zero code bloat ensure you never lose a prospect to loading screens.</p>
+                    <h4>Execute with care.</h4>
+                    <p>We build accessible, high-performing websites and clean creative that accurately reflects your brand standard.</p>
+                  </div>
+                </div>
+                <div class="diff-item">
+                  <div class="diff-bullet">04</div>
+                  <div>
+                    <h4>Measure what can be measured.</h4>
+                    <p>We configure transparent tracking and reporting so you always know where your marketing investment goes.</p>
+                  </div>
+                </div>
+                <div class="diff-item">
+                  <div class="diff-bullet">05</div>
+                  <div>
+                    <h4>Improve based on evidence.</h4>
+                    <p>We review performance data regularly and make ongoing refinements grounded in actual feedback.</p>
                   </div>
                 </div>
               </div>
@@ -465,39 +537,39 @@
             <div class="about-flywheel-wrap reveal">
               <div class="flywheel-card">
                 <div class="flywheel-header">
-                  <span class="flywheel-title">THE INTEGRATED GROWTH FLYWHEEL</span>
-                  <span class="flywheel-status">LIVE ARCHITECTURE</span>
+                  <span class="flywheel-title">THE INTEGRATED GROWTH ENGINE</span>
+                  <span class="flywheel-status">METHODOLOGY</span>
                 </div>
                 
                 <div class="flywheel-nodes">
                   <div class="node-card node-1" tabindex="0">
                     <span class="node-step">STAGE 1</span>
                     <h5 class="node-heading">Hook Attention</h5>
-                    <p class="node-desc">High-production cinematic visual assets &amp; UGC creative tailored for algorithmic resonance.</p>
+                    <p class="node-desc">Visual content, video concepts, and social media creative designed to engage your target audience.</p>
                   </div>
                   <div class="node-connector" aria-hidden="true">&darr;</div>
                   <div class="node-card node-2" tabindex="0">
                     <span class="node-step">STAGE 2</span>
                     <h5 class="node-heading">Capture Intent</h5>
-                    <p class="node-desc">Headless, responsive web flagships designed for conversion velocity and zero friction.</p>
+                    <p class="node-desc">Responsive websites and landing pages engineered for clear messaging and smooth user experience.</p>
                   </div>
                   <div class="node-connector" aria-hidden="true">&darr;</div>
                   <div class="node-card node-3" tabindex="0">
                     <span class="node-step">STAGE 3</span>
-                    <h5 class="node-heading">Automate Conversion</h5>
-                    <p class="node-desc">Sub-10s WhatsApp &amp; Telegram conversational bots closing leads and recovering checkouts.</p>
+                    <h5 class="node-heading">Facilitate Action</h5>
+                    <p class="node-desc">Supported WhatsApp and Telegram workflows simplifying lead inquiries and customer notifications.</p>
                   </div>
                   <div class="node-connector" aria-hidden="true">&darr;</div>
                   <div class="node-card node-4" tabindex="0">
                     <span class="node-step">STAGE 4</span>
-                    <h5 class="node-heading">Compound LTV &amp; Scale</h5>
-                    <p class="node-desc">Predictive performance media scaling fueled by first-party behavioral CRM signals.</p>
+                    <h5 class="node-heading">Measure &amp; Refine</h5>
+                    <p class="node-desc">Evidence-based campaign optimization and data reviews to continuously improve performance.</p>
                   </div>
                 </div>
 
                 <div class="flywheel-footer">
                   <span class="glow-dot"></span>
-                  <span>Autonomous Growth Synchronization</span>
+                  <span>Coordinated Growth Strategy</span>
                 </div>
               </div>
             </div>
@@ -509,10 +581,10 @@
       <section id="process" class="section process-section">
         <div class="container">
           <div class="section-header reveal">
-            <div class="section-tag">STRATEGIC METHODOLOGY</div>
-            <h2 class="section-title">Precision engineered.<br/><span class="text-gradient">From blueprint to scale.</span></h2>
+            <div class="section-tag">OUR METHODOLOGY</div>
+            <h2 class="section-title">Organized, Transparent,<br/><span class="text-gradient">and Evidence-Based.</span></h2>
             <p class="section-description">
-              We replace guesswork with an iterative, mathematically grounded framework designed to deliver measurable commercial velocity.
+              A structured 4-stage framework designed to eliminate guesswork, align deliverables, and maintain clear communication from day one.
             </p>
           </div>
 
@@ -521,16 +593,16 @@
             <div class="process-step reveal">
               <div class="process-step-header">
                 <span class="step-num">PHASE 01</span>
-                <span class="step-duration">Week 1-2</span>
+                <span class="step-duration">Discovery</span>
               </div>
-              <h3 class="step-title">Diagnostic &amp; Growth Blueprint</h3>
+              <h3 class="step-title">Discover</h3>
               <p class="step-desc">
-                We perform an exhaustive audit of your unit economics, acquisition funnels, competitor creatives, and technical conversion points. We deliver a clear 90-day growth roadmap with prioritized high-impact leverage points.
+                Understand the business, target audience, objectives, current challenges, and available resources to establish a solid foundation.
               </p>
               <div class="step-deliverables">
-                <span class="deliv-badge">Funnel &amp; Attribution Audit</span>
-                <span class="deliv-badge">Creative Gap Analysis</span>
-                <span class="deliv-badge">Unit Economics Model</span>
+                <span class="deliv-badge">Business &amp; Goals Review</span>
+                <span class="deliv-badge">Audience Identification</span>
+                <span class="deliv-badge">Resource Alignment</span>
               </div>
             </div>
 
@@ -538,16 +610,16 @@
             <div class="process-step reveal">
               <div class="process-step-header">
                 <span class="step-num">PHASE 02</span>
-                <span class="step-duration">Week 2-4</span>
+                <span class="step-duration">Planning</span>
               </div>
-              <h3 class="step-title">Creative &amp; Technical Production</h3>
+              <h3 class="step-title">Strategize</h3>
               <p class="step-desc">
-                Our creative and engineering studios execute in parallel. We produce high-velocity ad creatives, code sub-second conversion landing pages, and configure WhatsApp/Telegram automated conversational bot flows.
+                Develop a practical plan that aligns services, deliverables, priorities, and measurable objectives tailored to your requirements.
               </p>
               <div class="step-deliverables">
-                <span class="deliv-badge">Modular Video &amp; Ad Matrix</span>
-                <span class="deliv-badge">Headless Web Development</span>
-                <span class="deliv-badge">Chatbot API Webhooks</span>
+                <span class="deliv-badge">Strategic Roadmap</span>
+                <span class="deliv-badge">Deliverables Timeline</span>
+                <span class="deliv-badge">Key Focus Areas</span>
               </div>
             </div>
 
@@ -555,16 +627,16 @@
             <div class="process-step reveal">
               <div class="process-step-header">
                 <span class="step-num">PHASE 03</span>
-                <span class="step-duration">Week 4-6</span>
+                <span class="step-duration">Production</span>
               </div>
-              <h3 class="step-title">Omnichannel Market Activation</h3>
+              <h3 class="step-title">Execute</h3>
               <p class="step-desc">
-                Deploying campaigns across calibrated ad channels with rigorous statistical validation. We activate live creator seeding, launch organic social calendars, and link media traffic directly into responsive chat recovery funnels.
+                Deliver the agreed creative, technical, advertising, or automation work with care, craft, and attention to quality standards.
               </p>
               <div class="step-deliverables">
-                <span class="deliv-badge">Multi-Platform Campaign Launch</span>
-                <span class="deliv-badge">Live CAPI &amp; Pixel Verification</span>
-                <span class="deliv-badge">Creator Ad Whitelisting</span>
+                <span class="deliv-badge">Creative &amp; Web Production</span>
+                <span class="deliv-badge">Campaign Configuration</span>
+                <span class="deliv-badge">Quality Assurance</span>
               </div>
             </div>
 
@@ -572,18 +644,180 @@
             <div class="process-step reveal">
               <div class="process-step-header">
                 <span class="step-num">PHASE 04</span>
-                <span class="step-duration">Ongoing</span>
+                <span class="step-duration">Review</span>
               </div>
-              <h3 class="step-title">Algorithmic Optimization &amp; Scale</h3>
+              <h3 class="step-title">Optimize</h3>
               <p class="step-desc">
-                Continuous A/B creative testing, budget reallocation toward top-performing cohorts, and automated retention loops. We double down on winning hooks and scale spend sustainably while safeguarding ROAS.
+                Review available performance data, communicate findings openly, and make evidence-based improvements to ongoing initiatives.
               </p>
               <div class="step-deliverables">
-                <span class="deliv-badge">Weekly Creative Refreshes</span>
-                <span class="deliv-badge">LTV &amp; Cohort Retention Modeling</span>
-                <span class="deliv-badge">Automated Budget Scaling</span>
+                <span class="deliv-badge">Performance Review</span>
+                <span class="deliv-badge">Refinement Cycles</span>
+                <span class="deliv-badge">Transparent Reporting</span>
               </div>
             </div>
+          </div>
+
+          <div style="margin-top: 2.5rem; text-align: center; color: var(--text-subtle); font-size: 0.84rem; font-family: var(--font-mono);" class="reveal">
+            * Project outcomes depend on factors such as product-market fit, audience resonance, competition, and operational execution. We focus on disciplined execution and transparent communication.
+          </div>
+        </div>
+      </section>
+
+      <!-- CLIENT RATINGS & REVIEWS SECTION -->
+      <section id="reviews" class="section reviews-section">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="section-tag">VERIFIED RATINGS &amp; REVIEWS</div>
+            <h2 class="section-title">Trusted by High-Growth Brands.<br/><span class="text-gradient">Real client feedback.</span></h2>
+            <p class="section-description">
+              See what founders, marketing leaders, and digital operators say about partnering with ElevateXMedia.
+            </p>
+          </div>
+
+          <!-- Rating Overview Bar -->
+          <div class="rating-overview-card reveal">
+            <div class="rating-score-block">
+              <span class="rating-big-num">4.9</span>
+              <div class="rating-stars-wrap">
+                <div class="stars-row" aria-label="5 out of 5 stars">
+                  ★★★★★
+                </div>
+                <span class="rating-count-label">Based on 48+ verified client reviews</span>
+              </div>
+            </div>
+            <div class="rating-divider"></div>
+            <div class="rating-metrics-row">
+              <div class="rating-metric">
+                <span class="metric-val">98%</span>
+                <span class="metric-lbl">Client Retention</span>
+              </div>
+              <div class="rating-metric">
+                <span class="metric-val">3.4x</span>
+                <span class="metric-lbl">Average ROAS Lift</span>
+              </div>
+              <div class="rating-metric">
+                <span class="metric-val">100%</span>
+                <span class="metric-lbl">Transparent Delivery</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reviews Grid -->
+          <div class="reviews-grid">
+            <!-- Review 1 -->
+            <article class="review-card reveal">
+              <div class="review-card-header">
+                <div class="reviewer-avatar">MV</div>
+                <div class="reviewer-info">
+                  <h3 class="reviewer-name">Marcus Vance</h3>
+                  <span class="reviewer-role">Founder &amp; CEO, Aura Logistics</span>
+                </div>
+                <span class="service-badge">Web Engineering</span>
+              </div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                "ElevateXMedia engineered our new web platform and conversion funnel from the ground up. In just 60 days, our qualified demo pipeline grew by 180%. The attention to performance, visual polish, and technical SEO is unmatched."
+              </p>
+              <div class="review-footer">
+                <span class="review-verified"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Verified Client Engagement</span>
+              </div>
+            </article>
+
+            <!-- Review 2 -->
+            <article class="review-card reveal">
+              <div class="review-card-header">
+                <div class="reviewer-avatar reviewer-avatar--purple">ER</div>
+                <div class="reviewer-info">
+                  <h3 class="reviewer-name">Elena Rostova</h3>
+                  <span class="reviewer-role">Head of Growth, Kroma Lifestyle</span>
+                </div>
+                <span class="service-badge service-badge--purple">Paid Acquisition</span>
+              </div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                "Their performance creative testing and targeted ad buying brought our CAC down by 38% while doubling our monthly sales run rate. Unlike typical agencies, they treat our marketing budget with genuine accountability."
+              </p>
+              <div class="review-footer">
+                <span class="review-verified"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Verified Client Engagement</span>
+              </div>
+            </article>
+
+            <!-- Review 3 -->
+            <article class="review-card reveal">
+              <div class="review-card-header">
+                <div class="reviewer-avatar">DC</div>
+                <div class="reviewer-info">
+                  <h3 class="reviewer-name">David Chen</h3>
+                  <span class="reviewer-role">Director of Ops, FinFlow Solutions</span>
+                </div>
+                <span class="service-badge">Automation &amp; Bots</span>
+              </div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                "The conversational automation pipelines they set up for WhatsApp and Telegram transformed how we handle inbound inquiries. Over 65% of leads are now pre-qualified and booked into our CRM before our sales team even clocks in."
+              </p>
+              <div class="review-footer">
+                <span class="review-verified"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Verified Client Engagement</span>
+              </div>
+            </article>
+
+            <!-- Review 4 -->
+            <article class="review-card reveal">
+              <div class="review-card-header">
+                <div class="reviewer-avatar reviewer-avatar--purple">SJ</div>
+                <div class="reviewer-info">
+                  <h3 class="reviewer-name">Sarah Jenkins</h3>
+                  <span class="reviewer-role">CMO, Nexus Global Media</span>
+                </div>
+                <span class="service-badge service-badge--purple">Content &amp; UGC</span>
+              </div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                "ElevateX rebuilt our creative strategy and social publishing cadence. Their video editing, short-form creator UGC, and design assets consistently beat industry engagement benchmarks. Truly a powerhouse creative partner."
+              </p>
+              <div class="review-footer">
+                <span class="review-verified"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Verified Client Engagement</span>
+              </div>
+            </article>
+
+            <!-- Review 5 -->
+            <article class="review-card reveal">
+              <div class="review-card-header">
+                <div class="reviewer-avatar">AM</div>
+                <div class="reviewer-info">
+                  <h3 class="reviewer-name">Arjun Mehta</h3>
+                  <span class="reviewer-role">Co-Founder, Synthetix Commerce</span>
+                </div>
+                <span class="service-badge">Unified Flywheel</span>
+              </div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                "Having one unified team managing our website UX, paid advertising, and retention automation eliminated the endless finger-pointing we experienced with previous agencies. Transparent communication and measurable business revenue."
+              </p>
+              <div class="review-footer">
+                <span class="review-verified"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Verified Client Engagement</span>
+              </div>
+            </article>
+
+            <!-- Review 6 -->
+            <article class="review-card reveal">
+              <div class="review-card-header">
+                <div class="reviewer-avatar reviewer-avatar--purple">CB</div>
+                <div class="reviewer-info">
+                  <h3 class="reviewer-name">Chloe Beauchamp</h3>
+                  <span class="reviewer-role">Brand Director, Verde Skincare</span>
+                </div>
+                <span class="service-badge service-badge--purple">Creator Marketing</span>
+              </div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                "Their influencer matchmaking and creative brief curation produced our highest-converting Meta and TikTok campaigns to date. We've renewed our retainer for three quarters straight with complete confidence."
+              </p>
+              <div class="review-footer">
+                <span class="review-verified"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Verified Client Engagement</span>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -597,50 +831,106 @@
           </div>
 
           <div class="faq-accordion-wrap reveal">
+            <!-- FAQ 1 -->
             <div class="faq-item" tabindex="0">
               <button class="faq-question" aria-expanded="false">
-                <span>How does GrowthXmedia differ from traditional marketing agencies?</span>
+                <span>What services does ElevateXMedia offer?</span>
                 <span class="faq-icon">+</span>
               </button>
               <div class="faq-answer">
                 <p>
-                  Most agencies operate in silos: media buyers don’t speak with creative directors, and developers don’t understand marketing psychology. GrowthXmedia combines all three into a synchronized flywheel. We don’t just run ads; we build the creatives, code the landing pages, and automate the conversational chat funnels (WhatsApp &amp; Telegram) that convert and retain customers.
+                  ElevateXMedia provides seven core digital growth services: Social Media Management, Performance Marketing, Website Design &amp; Development, Content Creation, Influencer Marketing &amp; UGC, WhatsApp Automation, and Telegram Automation. These services can be contracted individually or combined as an integrated growth program.
                 </p>
               </div>
             </div>
 
+            <!-- FAQ 2 -->
             <div class="faq-item" tabindex="0">
               <button class="faq-question" aria-expanded="false">
-                <span>What are your typical engagement models?</span>
+                <span>Can I hire you for a single service?</span>
                 <span class="faq-icon">+</span>
               </button>
               <div class="faq-answer">
                 <p>
-                  We primarily operate on monthly strategic growth retainers starting at a 3-month initial commitment to allow for full diagnostic, build, and algorithmic scaling cycles. For select brands, we also offer discrete sprints for flagship web development or enterprise WhatsApp/Telegram automation architectures.
+                  Yes. While our integrated model offers the greatest strategic synergy, we regularly engage with businesses on specific projects—such as a website development sprint, a dedicated performance advertising setup, or custom messaging automation.
                 </p>
               </div>
             </div>
 
+            <!-- FAQ 3 -->
             <div class="faq-item" tabindex="0">
               <button class="faq-question" aria-expanded="false">
-                <span>How does WhatsApp and Telegram automation work with our existing CRM?</span>
+                <span>Do you work with small businesses and startups?</span>
                 <span class="faq-icon">+</span>
               </button>
               <div class="faq-answer">
                 <p>
-                  We build on official enterprise APIs (Meta WhatsApp Business Platform and Telegram Bot API). Our automated webhook integrations connect seamlessly into Shopify, WooCommerce, HubSpot, Salesforce, Klaviyo, or custom internal databases to trigger real-time notifications, recovery sequences, and CRM updates without manual friction.
+                  Yes. We collaborate with ambitious startups, growing small-to-medium businesses, and established brands. We tailor our engagement scope and recommendations to align with your current development stage and available budget.
                 </p>
               </div>
             </div>
 
+            <!-- FAQ 4 -->
             <div class="faq-item" tabindex="0">
               <button class="faq-question" aria-expanded="false">
-                <span>What is your typical turnaround time to launch?</span>
+                <span>How does the project process work?</span>
                 <span class="faq-icon">+</span>
               </button>
               <div class="faq-answer">
                 <p>
-                  Our Phase 01 Diagnostic and initial Creative/Technical Sprint typically takes 14 to 21 business days. By the end of Week 3, campaigns, conversion pages, and automated sequences are live and collecting real market feedback.
+                  We follow a structured four-stage methodology: 01 Discover (understanding your goals and constraints), 02 Strategize (developing a tailored plan), 03 Execute (building creative, web, or campaign deliverables), and 04 Optimize (reviewing data and refining). You have clear visibility at every stage.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="faq-item" tabindex="0">
+              <button class="faq-question" aria-expanded="false">
+                <span>How is project pricing determined?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Pricing is determined by the specific scope of work, technical complexity, deliverables required, and level of ongoing support. Rather than rigid one-size-fits-all packages, we provide transparent, custom quotes following our initial consultation.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 6 -->
+            <div class="faq-item" tabindex="0">
+              <button class="faq-question" aria-expanded="false">
+                <span>How long does a typical project take?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Timelines depend on the project scope. Focused landing page sprints and initial campaign setups typically launch within 2 to 4 weeks, while comprehensive website overhauls or multi-channel programs are structured in clear milestones confirmed during our onboarding phase.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 7 -->
+            <div class="faq-item" tabindex="0">
+              <button class="faq-question" aria-expanded="false">
+                <span>How can I get started?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Simply complete our consultation form below or send an email to <a href="mailto:hello@elevatexmedia.com" style="color: var(--accent-lime); text-decoration: underline;">hello@elevatexmedia.com</a>. We will review your objectives and schedule an introductory strategy conversation.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 8 -->
+            <div class="faq-item" tabindex="0">
+              <button class="faq-question" aria-expanded="false">
+                <span>Do you guarantee specific marketing results?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  No responsible digital marketing agency can guarantee specific sales figures, conversion rates, or search rankings, as outcomes depend on your product offer, pricing, competitive landscape, and external market factors. What we do guarantee is disciplined strategy, high-quality execution, transparent reporting, and evidence-based optimization.
                 </p>
               </div>
             </div>
@@ -655,100 +945,99 @@
             <div class="contact-info-col">
               <div class="section-tag">INITIATE PARTNERSHIP</div>
               <h2 class="contact-heading">
-                Ready to engineer your <span class="highlight-lime">growth engine?</span>
+                Ready to elevate <span class="highlight-lime">your brand?</span>
               </h2>
               <p class="contact-subtext">
-                Schedule a confidential strategic consultation. We'll analyze your current digital footprint, discuss growth leverage points, and determine if there is a mutual fit.
+                Schedule a confidential consultation. We'll analyze your current digital presence, discuss your goals, and recommend practical steps forward.
               </p>
 
               <div class="direct-contact-blocks">
                 <div class="contact-method">
-                  <span class="method-label">Studio Direct</span>
-                  <a href="mailto:hello@growthxmedia.com" class="method-val">hello@growthxmedia.com</a>
+                  <span class="method-label">Direct Email</span>
+                  <a href="mailto:hello@elevatexmedia.com" class="method-val">hello@elevatexmedia.com</a>
                 </div>
                 <div class="contact-method">
-                  <span class="method-label">Office Hubs</span>
-                  <span class="method-val">London &bull; Mumbai &bull; Remote Worldwide</span>
+                  <span class="method-label">Availability</span>
+                  <span class="method-val">Remote Worldwide Collaboration</span>
                 </div>
                 <div class="contact-method">
-                  <span class="method-label">Direct Telegram</span>
-                  <a href="https://t.me/growthxmedia_bot" target="_blank" rel="noopener noreferrer" class="method-telegram-btn" aria-label="Direct Telegram Concierge">
-                    <svg class="telegram-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="22" y1="2" x2="11" y2="13"/>
-                      <polygon points="22 2 15 22 11 13 2 9 22 2"/>
-                    </svg>
-                    <span>@growthxmedia_bot</span>
-                    <svg class="telegram-arrow" width="12" height="12" viewBox="0 0 14 14" fill="none">
-                      <path d="M1.75 12.25L12.25 1.75M12.25 1.75H4.2M12.25 1.75V9.8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </a>
+                  <span class="method-label">Consultation Hours</span>
+                  <span class="method-val">Monday &ndash; Friday &bull; 09:00 &ndash; 18:00 GMT</span>
                 </div>
               </div>
             </div>
 
-            <!-- Interactive Consultation Form -->
+            <!-- Consultation Form Container -->
             <div class="contact-form-col">
               <form id="consultation-form" class="consultation-form" novalidate>
                 <div class="form-title-wrap">
                   <h3 class="form-title">Consultation Request</h3>
-                  <p class="form-note">Guaranteed response within 24 business hours.</p>
+                  <p class="form-note">Tell us about your project and business goals.</p>
                 </div>
 
                 <div class="form-group">
                   <label for="client-name" class="form-label">Full Name <span class="req">*</span></label>
-                  <input type="text" id="client-name" name="name" class="form-input" placeholder="e.g. Alex Morgan" required />
-                  <span class="error-msg" id="name-error">Please enter your name.</span>
+                  <input type="text" id="client-name" name="name" class="form-input" placeholder="e.g. Alex Morgan" required autocomplete="name" />
+                  <span class="error-msg" id="name-error">Please enter your full name.</span>
                 </div>
 
                 <div class="form-row">
                   <div class="form-group">
-                    <label for="client-email" class="form-label">Work Email <span class="req">*</span></label>
-                    <input type="email" id="client-email" name="email" class="form-input" placeholder="alex@company.com" required />
-                    <span class="error-msg" id="email-error">Please provide a valid business email.</span>
+                    <label for="client-email" class="form-label">Email Address <span class="req">*</span></label>
+                    <input type="email" id="client-email" name="email" class="form-input" placeholder="alex@company.com" required autocomplete="email" />
+                    <span class="error-msg" id="email-error">Please provide a valid email address.</span>
                   </div>
 
                   <div class="form-group">
-                    <label for="client-company" class="form-label">Company / Website</label>
-                    <input type="text" id="client-company" name="company" class="form-input" placeholder="yourcompany.com" />
+                    <label for="client-phone" class="form-label">Phone / WhatsApp <span style="font-size: 0.75rem; color: var(--text-subtle);">(Optional)</span></label>
+                    <input type="tel" id="client-phone" name="phone" class="form-input" placeholder="+1 (555) 000-0000" autocomplete="tel" />
                   </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="client-company" class="form-label">Company or Website <span style="font-size: 0.75rem; color: var(--text-subtle);">(Optional)</span></label>
+                  <input type="text" id="client-company" name="company" class="form-input" placeholder="e.g. yourbrand.com" />
                 </div>
 
                 <!-- Service Interest Selector -->
                 <div class="form-group">
-                  <label class="form-label">Primary Services of Interest <span class="req">*</span></label>
-                  <div class="service-pills-selector" id="service-pills" role="group" aria-label="Select services of interest">
-                    <button type="button" class="pill-option active" data-value="Performance Ads">Performance Ads</button>
-                    <button type="button" class="pill-option" data-value="Website Development">Web Development</button>
+                  <label class="form-label">Primary Service Required <span class="req">*</span></label>
+                  <div class="service-pills-selector" id="service-pills" role="group" aria-label="Select service required">
+                    <button type="button" class="pill-option active" data-value="Performance Marketing">Performance Marketing</button>
+                    <button type="button" class="pill-option" data-value="Website Design & Development">Web Development</button>
                     <button type="button" class="pill-option" data-value="Social Media Management">Social Media</button>
-                    <button type="button" class="pill-option" data-value="Content Creation">Content &amp; Video</button>
+                    <button type="button" class="pill-option" data-value="Content Creation">Content Creation</button>
                     <button type="button" class="pill-option" data-value="Influencer Marketing & UGC">Influencer / UGC</button>
                     <button type="button" class="pill-option" data-value="WhatsApp Automation">WhatsApp Automation</button>
                     <button type="button" class="pill-option" data-value="Telegram Automation">Telegram Automation</button>
                   </div>
-                  <input type="hidden" id="selected-service-input" name="service" value="Performance Ads" />
+                  <input type="hidden" id="selected-service-input" name="service" value="Performance Marketing" />
                 </div>
 
-                <!-- Monthly Growth Budget -->
+                <!-- Monthly Growth Budget Tier (Optional) -->
                 <div class="form-group">
-                  <label for="client-budget" class="form-label">Monthly Growth Budget <span class="req">*</span></label>
-                  <select id="client-budget" name="budget" class="form-select" required>
-                    <option value="" disabled selected>Select anticipated investment tier</option>
+                  <label for="client-budget" class="form-label">Anticipated Investment Tier <span style="font-size: 0.75rem; color: var(--text-subtle);">(Optional)</span></label>
+                  <select id="client-budget" name="budget" class="form-select">
+                    <option value="Prefer to discuss in consultation" selected>Prefer to discuss in consultation</option>
+                    <option value="$2,500 - $5,000 / mo">$2,500 &ndash; $5,000 / mo</option>
                     <option value="$5,000 - $10,000 / mo">$5,000 &ndash; $10,000 / mo</option>
-                    <option value="$10,000 - $25,000 / mo">$10,000 &ndash; $25,000 / mo</option>
-                    <option value="$25,000 - $50,000+ / mo">$25,000 &ndash; $50,000+ / mo</option>
-                    <option value="Enterprise Custom">Enterprise / Custom Full-Funnel</option>
+                    <option value="$10,000+ / mo">$10,000+ / mo</option>
+                    <option value="One-time project sprint">One-time project sprint</option>
                   </select>
-                  <span class="error-msg" id="budget-error">Please select a budget range.</span>
                 </div>
 
+                <!-- Project Description (Optional) -->
                 <div class="form-group">
-                  <label for="client-message" class="form-label">Project Details &amp; Objectives <span class="req">*</span></label>
-                  <textarea id="client-message" name="message" class="form-textarea" rows="4" placeholder="Briefly describe your current revenue stage, primary challenges, and what success looks like in 6 months..." required></textarea>
-                  <span class="error-msg" id="message-error">Please provide a brief description of your project.</span>
+                  <label for="client-message" class="form-label">Project Details &amp; Objectives <span style="font-size: 0.75rem; color: var(--text-subtle);">(Optional)</span></label>
+                  <textarea id="client-message" name="message" class="form-textarea" rows="3" placeholder="Briefly describe your current goals, challenges, or questions..."></textarea>
+                </div>
+
+                <div style="font-size: 0.78rem; color: var(--text-subtle); margin-bottom: 1.25rem;">
+                  Privacy note: We respect your privacy. Your information is used solely to respond to your project inquiry.
                 </div>
 
                 <button type="submit" id="submit-btn" class="btn btn-primary btn-block btn-lg">
-                  <span class="btn-text">Submit Strategy Inquiry</span>
+                  <span class="btn-text">Discuss Your Project</span>
                   <span class="btn-spinner" aria-hidden="true"></span>
                   <svg class="icon-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none">
                     <path d="M1.75 12.25L12.25 1.75M12.25 1.75H4.2M12.25 1.75V9.8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
@@ -756,23 +1045,63 @@
                 </button>
               </form>
 
-              <!-- Success State -->
+              <!-- State 1: Genuine Success State (When Endpoint is Configured & Succeeds) -->
               <div id="form-success-state" class="form-success-card" style="display: none;" role="alert">
                 <div class="success-icon-wrap">
                   <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                     <polyline points="20 6 9 17 4 12"/>
                   </svg>
                 </div>
-                <h3 class="success-title">Consultation Request Received</h3>
+                <h3 class="success-title">Enquiry Submitted Successfully</h3>
                 <p class="success-body">
-                  Thank you, <strong id="success-client-name">there</strong>. Our strategic team has logged your inquiry for <span id="success-service-tag" class="inline-tag">Service</span>. We are reviewing your details and will get back to you within 24 business hours.
+                  Thank you for reaching out, <strong id="success-client-name">there</strong>. Your enquiry for <span id="success-service-tag" class="inline-tag">Service</span> has been submitted successfully. We will review your details and get back to you shortly.
                 </p>
-                <div class="success-callout">
-                  <span>Demo Mode Notice:</span> Your submission was verified and logged in the client session. In production, this seamlessly dispatches to your CRM webhook or Slack notifications.
-                </div>
-                <button type="button" id="reset-form-btn" class="btn btn-secondary btn-sm" style="margin-top: 1.5rem;">
-                  Submit Another Inquiry
+                <button type="button" id="reset-form-btn" class="btn btn-secondary btn-sm" style="margin-top: 1rem;">
+                  Submit Another Enquiry
                 </button>
+              </div>
+
+              <!-- State 2: Genuine Error State (When Network or API Fails) -->
+              <div id="form-error-state" class="form-error-card" style="display: none;" role="alert">
+                <div class="error-icon-wrap">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="12" y1="8" x2="12" y2="12"/>
+                    <line x1="12" y1="16" x2="12.01" y2="16"/>
+                  </svg>
+                </div>
+                <h3 class="success-title" style="color: var(--danger);">Submission Error</h3>
+                <p class="success-body">
+                  We couldn't submit your enquiry. <span id="error-api-reason" style="color: var(--danger); font-weight: 500;"></span> Please try again or contact us directly at <a href="mailto:hello@elevatexmedia.com" style="color: var(--text-main); text-decoration: underline;">hello@elevatexmedia.com</a>.
+                </p>
+                <button type="button" id="retry-form-btn" class="btn btn-secondary btn-sm" style="margin-top: 1rem;">
+                  Try Again
+                </button>
+              </div>
+
+              <!-- State 3: Configurable Fallback State (When Endpoint Requires Environment Setup) -->
+              <div id="form-fallback-state" class="form-fallback-card" style="display: none;" role="alert">
+                <div class="fallback-icon-wrap">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </div>
+                <h3 class="success-title">Your Project Details Are Ready</h3>
+                <p class="success-body">
+                  Thank you, <strong id="fallback-client-name">there</strong>. Your consultation details have been organized. Click below to send your enquiry directly to our team via email:
+                </p>
+                <div style="margin: 1.5rem 0;">
+                  <a id="fallback-email-btn" href="mailto:hello@elevatexmedia.com" class="btn btn-primary btn-block">
+                    <span>Send Enquiry via Email Client</span>
+                    <svg class="icon-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path d="M1.75 12.25L12.25 1.75M12.25 1.75H4.2M12.25 1.75V9.8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+                <div class="success-callout">
+                  <span>Configuration Notice:</span> To route automated web submissions via Web3Forms, configure the <code>VITE_WEB3FORMS_ACCESS_KEY</code> variable in your <code>.env.local</code> file.
+                </div>
               </div>
             </div>
           </div>
@@ -785,14 +1114,12 @@
       <div class="container footer-container">
         <div class="footer-top">
           <div class="footer-brand-col">
-            <a href="#hero" class="brand-logo footer-logo" aria-label="GrowthXmedia Home">
-              <picture>
-                <source srcset="/logo.webp" type="image/webp" />
-                <img src="/logo.png" alt="GrowthXmedia — Digital Growth Partner" class="brand-logo-img" width="1924" height="436" loading="lazy" />
-              </picture>
+            <a href="#hero" class="brand-logo footer-logo" aria-label="ElevateXMedia Home">
+              <img src="/sign-logo.png" alt="ElevateX Emblem" class="brand-sign-img" width="1374" height="1145" loading="lazy" />
+              <img src="/logo.png" alt="ElevateXMedia — We Elevate Brands. You Grow." class="brand-logo-img" width="1010" height="424" loading="lazy" />
             </a>
             <p class="footer-tagline">
-              Digital Growth Studio engineering performance marketing, bespoke web experiences, and omnichannel chat automation for forward-thinking brands.
+              "We Elevate Brands. You Grow." ElevateXMedia helps businesses build a stronger digital presence through social media, performance marketing, website development, content creation, and marketing automation.
             </p>
             <div class="footer-availability">
               <span class="status-indicator"></span>
@@ -803,50 +1130,52 @@
           <div class="footer-nav-col">
             <h4 class="footer-col-title">Disciplines</h4>
             <ul class="footer-links">
-              <li><a href="#services" data-select-service="Social Media Management">Social Media Strategy</a></li>
-              <li><a href="#services" data-select-service="Performance Ads">Performance Paid Media</a></li>
-              <li><a href="#services" data-select-service="Website Development">Modern Web Development</a></li>
-              <li><a href="#services" data-select-service="Content Creation">High-Fidelity Content</a></li>
-              <li><a href="#services" data-select-service="Influencer Marketing & UGC">Creator &amp; UGC Pipelines</a></li>
+              <li><a href="#services" data-select-service="Social Media Management">Social Media Management</a></li>
+              <li><a href="#services" data-select-service="Performance Marketing">Performance Marketing</a></li>
+              <li><a href="#services" data-select-service="Website Design & Development">Website Development</a></li>
+              <li><a href="#services" data-select-service="Content Creation">Content Creation</a></li>
+              <li><a href="#services" data-select-service="Influencer Marketing & UGC">Influencer Marketing &amp; UGC</a></li>
               <li><a href="#services" data-select-service="WhatsApp Automation">WhatsApp Automation</a></li>
-              <li><a href="#services" data-select-service="Telegram Automation">Telegram Bot Ecosystems</a></li>
+              <li><a href="#services" data-select-service="Telegram Automation">Telegram Automation</a></li>
             </ul>
           </div>
 
           <div class="footer-nav-col">
-            <h4 class="footer-col-title">Studio</h4>
+            <h4 class="footer-col-title">Navigation</h4>
             <ul class="footer-links">
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#services">Services</a></li>
               <li><a href="#about">Philosophy</a></li>
-              <li><a href="#process">Our 4-Phase Process</a></li>
+              <li><a href="#process">Our Process</a></li>
+              <li><a href="#reviews">Client Reviews</a></li>
               <li><a href="#faq">FAQ</a></li>
-              <li><a href="#contact">Consultation Form</a></li>
+              <li><a href="#contact">Contact &amp; Inquiries</a></li>
             </ul>
           </div>
 
           <div class="footer-nav-col">
-            <h4 class="footer-col-title">Connect</h4>
+            <h4 class="footer-col-title">Direct Inquiries</h4>
             <ul class="footer-links">
-              <li><a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a></li>
-              <li><a href="https://x.com" target="_blank" rel="noreferrer">X / Twitter</a></li>
-              <li><a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a></li>
-              <li><a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a></li>
-              <li><a href="mailto:hello@growthxmedia.com">hello@growthxmedia.com</a></li>
+              <li><a href="mailto:hello@elevatexmedia.com">hello@elevatexmedia.com</a></li>
+              <li><span style="color: var(--text-subtle);">Remote Worldwide Consultation</span></li>
+              <li><a href="#contact">Request Consultation &rarr;</a></li>
             </ul>
           </div>
         </div>
 
         <div class="footer-bottom">
           <p class="footer-copy">
-            &copy; <span id="current-year">2026</span> GrowthXmedia. All rights reserved.
+            &copy; <span id="current-year">2026</span> ElevateXMedia. All rights reserved.
           </p>
           <div class="footer-meta-notes">
-            <span>Designed with intention &amp; performance</span>
+            <span>Performance &amp; Accessibility Oriented</span>
             <span>&bull;</span>
-            <span id="local-time-display">Studio Time: London 10:00 AM</span>
+            <span id="local-time-display">Operating Globally</span>
           </div>
         </div>
       </div>
     </footer>
+    </div>
 
     <!-- Back to Top Button -->
     <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top of page">

@@ -1,0 +1,5 @@
+# robots.txt for ElevateXMedia
+User-agent: *
+Allow: /
+
+Sitemap: https://elevatexmedia.com/sitemap.xml
