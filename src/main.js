@@ -288,7 +288,7 @@ function initConsultationForm() {
   // Web3Forms official submission endpoint & configuration
   const web3formsEndpoint = import.meta.env.VITE_CONTACT_FORM_ENDPOINT || 'https://api.web3forms.com/submit';
   const web3formsAccessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
-  const targetEmail = import.meta.env.VITE_CONTACT_EMAIL || 'hello@elevatexmedia.com';
+  const targetEmail = import.meta.env.VITE_CONTACT_EMAIL || 'elevatexmedia.enquiry@gmail.com';
 
   const validateEmail = (email) => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
